@@ -111,3 +111,8 @@ team add joey "Joey"
 team modify joey color dark_purple
 team modify joey seeFriendlyInvisibles false
 team modify joey friendlyFire true
+
+team add rattata "Rattata"
+team modify rattata color dark_purple
+team modify rattata seeFriendlyInvisibles false
+team modify rattata friendlyFire true
