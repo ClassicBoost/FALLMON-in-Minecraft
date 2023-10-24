@@ -1,6 +1,6 @@
 # UNUSED(?), WE ARE USING TEAM UPDATE INSTEAD
 
-team leave @p
+team join default @p
 
 # data
 attribute @p generic.movement_speed base set 0.1

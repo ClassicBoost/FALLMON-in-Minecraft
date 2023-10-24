@@ -6,7 +6,7 @@ bossbar set 5 players none
 bossbar set 6 players none
 bossbar set 7 players none
 
-execute if entity @a[scores={radiation=..50}] run bossbar set 1 players @a[scores={radiation=..50}]
+execute if entity @a[scores={radiation=..49}] run bossbar set 1 players @a[scores={radiation=..49}]
 
 execute if entity @a[scores={radiation=50..149}] run bossbar set 2 players @a[scores={radiation=50..149}]
 
