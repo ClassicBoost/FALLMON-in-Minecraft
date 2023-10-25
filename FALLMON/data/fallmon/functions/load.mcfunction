@@ -1,6 +1,6 @@
 function fallmon:species/actuallyreload
 tellraw @a {"text": "FALLMON Datapack Loaded", "color" : "#47FF47", "bold": true}
-tellraw @a {"text": "Version: Beta 1.1", "color" : "#47FF47", "italic": true}
+tellraw @a {"text": "Version: Beta 1.1.1", "color" : "#47FF47", "italic": true}
 tellraw @a {"text": "Welcome to the wasteland, you are... REDACTED years after the warhead. Please ensure all safety equipment is with you at all times.", "color" : "#47FF47"}
 playsound block.note_block.banjo master @a ~ ~ ~ 1000000000000000000 1
 

@@ -3,193 +3,193 @@ execute if entity @a[team=!] run effect clear @a[team=!] water_breathing
 execute if entity @a[team=!] run effect clear @a[team=!] jump_boost
 execute if entity @a[team=!] run effect clear @a[team=!] fire_resistance
 
-execute if entity @a[team=!] run attribute @p generic.movement_speed base set 0.1
-execute if entity @a[team=!] run attribute @p generic.armor base set 0
-execute if entity @a[team=!] run attribute @p generic.max_health base set 20
-execute if entity @a[team=!] run attribute @p generic.attack_damage base set 2
-execute if entity @a[team=!] run attribute @p generic.attack_knockback base set 0
+execute if entity @a[team=!] run attribute @r[team=!] generic.movement_speed base set 0.1
+execute if entity @a[team=!] run attribute @r[team=!] generic.armor base set 0
+execute if entity @a[team=!] run attribute @r[team=!] generic.max_health base set 20
+execute if entity @a[team=!] run attribute @r[team=!] generic.attack_damage base set 2
+execute if entity @a[team=!] run attribute @r[team=!] generic.attack_knockback base set 0
 
 # bulbasaur
-execute if entity @a[team=bulbasaur] run attribute @p generic.movement_speed base set 0.08
-execute if entity @a[team=bulbasaur] run attribute @p generic.max_health base set 24
-execute if entity @a[team=bulbasaur] run attribute @p generic.attack_knockback base set 0.5
+execute if entity @a[team=bulbasaur] run attribute @r[team=bulbasaur] generic.movement_speed base set 0.08
+execute if entity @a[team=bulbasaur] run attribute @r[team=bulbasaur] generic.max_health base set 24
+execute if entity @a[team=bulbasaur] run attribute @r[team=bulbasaur] generic.attack_knockback base set 0.5
 
 # charmander
-execute if entity @a[team=charmander] run attribute @p generic.movement_speed base set 0.12
-execute if entity @a[team=charmander] run attribute @p generic.attack_damage base set 2.15
+execute if entity @a[team=charmander] run attribute @r[team=charmander] generic.movement_speed base set 0.12
+execute if entity @a[team=charmander] run attribute @r[team=charmander] generic.attack_damage base set 2.15
 
 effect give @a[team=charmander] fire_resistance infinite 0 true
 
 # squirtle
-execute if entity @a[team=squirtle] run attribute @p generic.armor base set 6
-execute if entity @a[team=squirtle] run attribute @p generic.attack_knockback base set 0.2
+execute if entity @a[team=squirtle] run attribute @r[team=squirtle] generic.armor base set 6
+execute if entity @a[team=squirtle] run attribute @r[team=squirtle] generic.attack_knockback base set 0.2
 
 effect give @a[team=squirtle] water_breathing infinite 0 true
 
 # pikachu
-execute if entity @a[team=pikachu] run attribute @p generic.movement_speed base set 0.15
-execute if entity @a[team=pikachu] run attribute @p generic.max_health base set 18
-execute if entity @a[team=pikachu] run attribute @p generic.attack_damage base set 2.15
+execute if entity @a[team=pikachu] run attribute @r[team=pikachu] generic.movement_speed base set 0.15
+execute if entity @a[team=pikachu] run attribute @r[team=pikachu] generic.max_health base set 18
+execute if entity @a[team=pikachu] run attribute @r[team=pikachu] generic.attack_damage base set 2.15
 
 effect give @a[team=pikachu] jump_boost infinite 1 true
 
 #rattata
-execute if entity @a[team=rattata] run attribute @p generic.movement_speed base set 0.15
-execute if entity @a[team=rattata] run attribute @p generic.max_health base set 22
+execute if entity @a[team=rattata] run attribute @r[team=rattata] generic.movement_speed base set 0.15
+execute if entity @a[team=rattata] run attribute @r[team=rattata] generic.max_health base set 22
 effect give @a[team=rattata] jump_boost infinite 1 true
 
 #psyduck
-execute if entity @a[team=psyduck] run attribute @p generic.max_health base set 22
+execute if entity @a[team=psyduck] run attribute @r[team=psyduck] generic.max_health base set 22
 effect give @a[team=psyduck] water_breathing infinite 1 true
 
 # cubone
-execute if entity @a[team=cubone] run attribute @p generic.movement_speed base set 0.12
-execute if entity @a[team=cubone] run attribute @p generic.attack_damage base set 4
-execute if entity @a[team=cubone] run attribute @p generic.attack_knockback base set 0.2
+execute if entity @a[team=cubone] run attribute @r[team=cubone] generic.movement_speed base set 0.12
+execute if entity @a[team=cubone] run attribute @r[team=cubone] generic.attack_damage base set 4
+execute if entity @a[team=cubone] run attribute @r[team=cubone] generic.attack_knockback base set 0.2
 
 # eevee
 # erm... Eevee doesn't really have any modifiers.
 # YOUR AD HERE FUCKER
 
 # chikorita
-execute if entity @a[team=chikorita] run attribute @p generic.movement_speed base set 0.11
-execute if entity @a[team=chikorita] run attribute @p generic.attack_damage base set 3
+execute if entity @a[team=chikorita] run attribute @r[team=chikorita] generic.movement_speed base set 0.11
+execute if entity @a[team=chikorita] run attribute @r[team=chikorita] generic.attack_damage base set 3
 
 # cyndaquil
-execute if entity @a[team=cyndaquil] run attribute @p generic.attack_damage base set 3
-execute if entity @a[team=cyndaquil] run attribute @p generic.max_health base set 16
+execute if entity @a[team=cyndaquil] run attribute @r[team=cyndaquil] generic.attack_damage base set 3
+execute if entity @a[team=cyndaquil] run attribute @r[team=cyndaquil] generic.max_health base set 16
 effect give @a[team=cyndaquil] fire_resistance infinite 1 true
 
 # totodile
-execute if entity @a[team=totodile] run attribute @p generic.attack_damage base set 6
-execute if entity @a[team=psyduck] run attribute @p generic.attack_knockback base set 0.2
+execute if entity @a[team=totodile] run attribute @r[team=totodile] generic.attack_damage base set 6
+execute if entity @a[team=totodile] run attribute @r[team=totodile] generic.attack_knockback base set 0.2
 effect give @a[team=totodile] water_breathing infinite 1 true
 
 # treecko
-execute if entity @a[team=treecko] run attribute @p generic.movement_speed base set 0.11
-execute if entity @a[team=treecko] run attribute @p generic.armor base set -2
-execute if entity @a[team=treecko] run attribute @p generic.attack_damage base set 1
+execute if entity @a[team=treecko] run attribute @r[team=treecko] generic.movement_speed base set 0.11
+execute if entity @a[team=treecko] run attribute @r[team=treecko] generic.armor base set -2
+execute if entity @a[team=treecko] run attribute @r[team=treecko] generic.attack_damage base set 1
 
 # torchic
-execute if entity @a[team=torchic] run attribute @p generic.armor base set 1
-execute if entity @a[team=torchic] run attribute @p generic.attack_damage base set 5
+execute if entity @a[team=torchic] run attribute @r[team=torchic] generic.armor base set 1
+execute if entity @a[team=torchic] run attribute @r[team=torchic] generic.attack_damage base set 5
 effect give @a[team=torchic] fire_resistance infinite 1 true
 
 # mudkip
 # i herd u liek mudkipz
-execute if entity @a[team=mudkip] run attribute @p generic.armor base set 2
-execute if entity @a[team=mudkip] run attribute @p generic.max_health base set 22
-execute if entity @a[team=mudkip] run attribute @p generic.attack_damage base set 5
-execute if entity @a[team=psyduck] run attribute @p generic.attack_knockback base set 0.2
+execute if entity @a[team=mudkip] run attribute @r[team=mudkip] generic.armor base set 2
+execute if entity @a[team=mudkip] run attribute @r[team=mudkip] generic.max_health base set 22
+execute if entity @a[team=mudkip] run attribute @r[team=mudkip] generic.attack_damage base set 5
+execute if entity @a[team=mudkip] run attribute @r[team=mudkip] generic.attack_knockback base set 0.2
 effect give @a[team=mudkip] water_breathing infinite 1 true
 
 # volpix
-execute if entity @a[team=volpix] run attribute @p generic.movement_speed base set 0.09
-execute if entity @a[team=volpix] run attribute @p generic.armor base set 2
+execute if entity @a[team=volpix] run attribute @r[team=volpix] generic.movement_speed base set 0.09
+execute if entity @a[team=volpix] run attribute @r[team=volpix] generic.armor base set 2
 effect give @a[team=volpix] water_breathing infinite 1 true
 
 # phanpy
 # fat ass
-execute if entity @a[team=phanpy] run attribute @p generic.movement_speed base set 0.08
-execute if entity @a[team=phanpy] run attribute @p generic.armor base set 1
-execute if entity @a[team=phanpy] run attribute @p generic.max_health base set 22
-execute if entity @a[team=phanpy] run attribute @p generic.attack_damage base set 5
+execute if entity @a[team=phanpy] run attribute @r[team=phanpy] generic.movement_speed base set 0.08
+execute if entity @a[team=phanpy] run attribute @r[team=phanpy] generic.armor base set 1
+execute if entity @a[team=phanpy] run attribute @r[team=phanpy] generic.max_health base set 22
+execute if entity @a[team=phanpy] run attribute @r[team=phanpy] generic.attack_damage base set 5
 
 # turtwig
 # I like turtles
-execute if entity @a[team=turtwig] run attribute @p generic.movement_speed base set 0.11
-execute if entity @a[team=turtwig] run attribute @p generic.armor base set 2
-execute if entity @a[team=turtwig] run attribute @p generic.max_health base set 22
-execute if entity @a[team=turtwig] run attribute @p generic.attack_damage base set 4
+execute if entity @a[team=turtwig] run attribute @r[team=turtwig] generic.movement_speed base set 0.11
+execute if entity @a[team=turtwig] run attribute @r[team=turtwig] generic.armor base set 2
+execute if entity @a[team=turtwig] run attribute @r[team=turtwig] generic.max_health base set 22
+execute if entity @a[team=turtwig] run attribute @r[team=turtwig] generic.attack_damage base set 4
 
 # chimchar
 # naw man, this is just a fucking charmander rip off
-execute if entity @a[team=chimchar] run attribute @p generic.movement_speed base set 0.09
-execute if entity @a[team=chimchar] run attribute @p generic.attack_damage base set 3
+execute if entity @a[team=chimchar] run attribute @r[team=chimchar] generic.movement_speed base set 0.09
+execute if entity @a[team=chimchar] run attribute @r[team=chimchar] generic.attack_damage base set 3
 effect give @a[team=chimchar] fire_resistance infinite 1 true
 
 # piplup
 # bf as piplup??????????
-execute if entity @a[team=piplup] run attribute @p generic.attack_damage base set 3
+execute if entity @a[team=piplup] run attribute @r[team=piplup] generic.attack_damage base set 3
 effect give @a[team=piplup] water_breathing infinite 1 true
 
 # shinx
 # https://pokepasta.fandom.com/wiki/PMD:_Explorers_of_Death
-execute if entity @a[team=shinx] run attribute @p generic.movement_speed base set 0.11
-execute if entity @a[team=shinx] run attribute @p generic.armor base set 1
-execute if entity @a[team=shinx] run attribute @p generic.attack_damage base set 5
+execute if entity @a[team=shinx] run attribute @r[team=shinx] generic.movement_speed base set 0.11
+execute if entity @a[team=shinx] run attribute @r[team=shinx] generic.armor base set 1
+execute if entity @a[team=shinx] run attribute @r[team=shinx] generic.attack_damage base set 5
 
 # riolu
-execute if entity @a[team=riolu] run attribute @p generic.movement_speed base set 0.11
-execute if entity @a[team=riolu] run attribute @p generic.armor base set 2
-execute if entity @a[team=riolu] run attribute @p generic.max_health base set 14
-execute if entity @a[team=riolu] run attribute @p generic.attack_damage base set 3.5
-execute if entity @a[team=riolu] run attribute @p generic.attack_knockback base set 0.5
+execute if entity @a[team=riolu] run attribute @r[team=riolu] generic.movement_speed base set 0.11
+execute if entity @a[team=riolu] run attribute @r[team=riolu] generic.armor base set 2
+execute if entity @a[team=riolu] run attribute @r[team=riolu] generic.max_health base set 14
+execute if entity @a[team=riolu] run attribute @r[team=riolu] generic.attack_damage base set 3.5
+execute if entity @a[team=riolu] run attribute @r[team=riolu] generic.attack_knockback base set 0.5
 
 effect give @a[team=riolu] jump_boost infinite 0 true
 effect give @a[team=riolu] haste infinite 0 true
 
 # wooper
-execute if entity @a[team=wooper] run attribute @p generic.movement_speed base set 0.13
-execute if entity @a[team=wooper] run attribute @p generic.max_health base set 22
-execute if entity @a[team=wooper] run attribute @p generic.armor base set 5
-execute if entity @a[team=wooper] run attribute @p generic.attack_damage base set 1
-execute if entity @a[team=wooper] run attribute @p generic.attack_knockback base set 0.4
+execute if entity @a[team=wooper] run attribute @r[team=wooper] generic.movement_speed base set 0.13
+execute if entity @a[team=wooper] run attribute @r[team=wooper] generic.max_health base set 22
+execute if entity @a[team=wooper] run attribute @r[team=wooper] generic.armor base set 5
+execute if entity @a[team=wooper] run attribute @r[team=wooper] generic.attack_damage base set 1
+execute if entity @a[team=wooper] run attribute @r[team=wooper] generic.attack_knockback base set 0.4
 
 # azurill
 # doing doing doing doing doing doing doing doing doing doing doing doing
-execute if entity @a[team=azurill] run attribute @p generic.movement_speed base set 0.13
-execute if entity @a[team=azurill] run attribute @p generic.armor base set 5
-execute if entity @a[team=azurill] run attribute @p generic.attack_damage base set 1
+execute if entity @a[team=azurill] run attribute @r[team=azurill] generic.movement_speed base set 0.13
+execute if entity @a[team=azurill] run attribute @r[team=azurill] generic.armor base set 5
+execute if entity @a[team=azurill] run attribute @r[team=azurill] generic.attack_damage base set 1
 
 # growlithe
 # dog
-execute if entity @a[team=growlithe] run attribute @p generic.movement_speed base set 0.12
-execute if entity @a[team=growlithe] run attribute @p generic.armor base set 2
-execute if entity @a[team=growlithe] run attribute @p generic.attack_damage base set 5
+execute if entity @a[team=growlithe] run attribute @r[team=growlithe] generic.movement_speed base set 0.12
+execute if entity @a[team=growlithe] run attribute @r[team=growlithe] generic.armor base set 2
+execute if entity @a[team=growlithe] run attribute @r[team=growlithe] generic.attack_damage base set 5
 effect give @a[team=growlithe] fire_resistance infinite 1 true
 
 # teddiursa
 # freddy fazbear what happened? SQUID GAME
-execute if entity @a[team=teddiursa] run attribute @p generic.movement_speed base set 0.11
-execute if entity @a[team=teddiursa] run attribute @p generic.armor base set 1
-execute if entity @a[team=teddiursa] run attribute @p generic.max_health base set 22
-execute if entity @a[team=teddiursa] run attribute @p generic.attack_damage base set 4
+execute if entity @a[team=teddiursa] run attribute @r[team=teddiursa] generic.movement_speed base set 0.11
+execute if entity @a[team=teddiursa] run attribute @r[team=teddiursa] generic.armor base set 1
+execute if entity @a[team=teddiursa] run attribute @r[team=teddiursa] generic.max_health base set 22
+execute if entity @a[team=teddiursa] run attribute @r[team=teddiursa] generic.attack_damage base set 4
 
 # buneary
 # bunny sex
-execute if entity @a[team=buneary] run attribute @p generic.movement_speed base set 0.12
-execute if entity @a[team=buneary] run attribute @p generic.attack_damage base set 3
+execute if entity @a[team=buneary] run attribute @r[team=buneary] generic.movement_speed base set 0.12
+execute if entity @a[team=buneary] run attribute @r[team=buneary] generic.attack_damage base set 3
 
 # togepi
 # should this even be allowed!?!?!?!
-execute if entity @a[team=togepi] run attribute @p generic.movement_speed base set 0.13
-execute if entity @a[team=togepi] run attribute @p generic.armor base set 5
-execute if entity @a[team=togepi] run attribute @p generic.max_health base set 18
-execute if entity @a[team=togepi] run attribute @p generic.attack_damage base set 1
+execute if entity @a[team=togepi] run attribute @r[team=togepi] generic.movement_speed base set 0.13
+execute if entity @a[team=togepi] run attribute @r[team=togepi] generic.armor base set 5
+execute if entity @a[team=togepi] run attribute @r[team=togepi] generic.max_health base set 18
+execute if entity @a[team=togepi] run attribute @r[team=togepi] generic.attack_damage base set 1
 
 # mareep
 # the player turns into a sheep
-execute if entity @a[team=mareep] run attribute @p generic.max_health base set 22
-execute if entity @a[team=mareep] run attribute @p generic.attack_damage base set 3
+execute if entity @a[team=mareep] run attribute @r[team=mareep] generic.max_health base set 22
+execute if entity @a[team=mareep] run attribute @r[team=mareep] generic.attack_damage base set 3
 
 # elekid
-execute if entity @a[team=elekid] run attribute @p generic.movement_speed base set 0.17
-execute if entity @a[team=elekid] run attribute @p generic.max_health base set 14
-execute if entity @a[team=elekid] run attribute @p generic.attack_damage base set 6
+execute if entity @a[team=elekid] run attribute @r[team=elekid] generic.movement_speed base set 0.17
+execute if entity @a[team=elekid] run attribute @r[team=elekid] generic.max_health base set 14
+execute if entity @a[team=elekid] run attribute @r[team=elekid] generic.attack_damage base set 6
 
 # pachirisu
-execute if entity @a[team=pachirisu] run attribute @p generic.movement_speed base set 0.09
-execute if entity @a[team=pachirisu] run attribute @p generic.armor base set 3
-execute if entity @a[team=pachirisu] run attribute @p generic.max_health base set 22
-execute if entity @a[team=pachirisu] run attribute @p generic.attack_damage base set 3
+execute if entity @a[team=pachirisu] run attribute @r[team=pachirisu] generic.movement_speed base set 0.09
+execute if entity @a[team=pachirisu] run attribute @r[team=pachirisu] generic.armor base set 3
+execute if entity @a[team=pachirisu] run attribute @r[team=pachirisu] generic.max_health base set 22
+execute if entity @a[team=pachirisu] run attribute @r[team=pachirisu] generic.attack_damage base set 3
 
 # snivy
-execute if entity @a[team=snivy] run attribute @p generic.movement_speed base set 0.125
-execute if entity @a[team=snivy] run attribute @p generic.armor base set -4
-execute if entity @a[team=snivy] run attribute @p generic.max_health base set 16
-execute if entity @a[team=snivy] run attribute @p generic.attack_damage base set 1.5
-execute if entity @a[team=snivy] run attribute @p generic.attack_knockback base set 0.2
+execute if entity @a[team=snivy] run attribute @r[team=snivy] generic.movement_speed base set 0.125
+execute if entity @a[team=snivy] run attribute @r[team=snivy] generic.armor base set -4
+execute if entity @a[team=snivy] run attribute @r[team=snivy] generic.max_health base set 16
+execute if entity @a[team=snivy] run attribute @r[team=snivy] generic.attack_damage base set 1.5
+execute if entity @a[team=snivy] run attribute @r[team=snivy] generic.attack_knockback base set 0.2
 
 effect give @a[team=snivy] jump_boost infinite 0 true
 
@@ -247,15 +247,15 @@ effect give @a[team=snivy] jump_boost infinite 0 true
 #                                                              :?B###BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB#BBB######B######B####B##BBB######B#############################5YB@@@@@@@@@@@@&Y.^~~!!!7YG&@@@@@@@@@@&P7:..............^!!!!!!!!!~~~~~^^:::!5B##BBBB#577???7^                                                                                                                                     
 #                                                               :7G##BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB#BBBB#B#BB#BB#BB##BB##BBBB#BB#B#####BB#####BB###############G?P@@@@@@@@@@@@B?:^~~!!!!!7?YPGBBBBGPY?~...............^!7!!!!!!!~~~~~~^^:::.:~YG#BBB#P?7??J7^                                                                                                                                     
 #                                                                :!P##BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB#B#BBBB##Y5#@@@@@@@@@@@G!:^~~!!!!!!!!!!7777!!!~:..............:!!!!!!!!!!~~~~~~^^::::.~?JYBBB#GJ7??J?~.                                        .^.                                                                                         
-#                                                                 .~5B#BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB#GYG@@@@&&@&&@@P~:^~~!!!!!!!!!!!!!!!!!~:.............:!!!!!!!!!!~~~~~~~^^:::.:J&&5JBB#GJ7??J?~.                                       .!J?^                                                                                        
+#                                                                 .~5B#BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB#GYG@@@@&&@&&@@r[team=]~:^~~!!!!!!!!!!!!!!!!!~:.............:!!!!!!!!!!~~~~~~~^^:::.:J&&5JBB#GJ7??J?~.                                       .!J?^                                                                                        
 #                                                                  .^JB##BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB#55#@&&&&&&&@&5^:^~~!!!!!!!!!!!!!!!!!~:............^!!!!!!!!!!!~~~~~~^^^:::.:P&@#YGB#GJ7??J?~.                                      .~J55Y!:                                                                                      
 #                                                                    :7P##BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB#PJ5@&&&&&&&@@Y::^~~!!!!!!!!!!!!!!!!!~:..........:~7!!!!!!!!!!~~~~~~~^^:::::!#@@BYGB#GJ7??J?~:                                      ^J5YY5Y?~.                                                                                    
 #                                                                     .~5###BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB#5?G@&&&&&&@@Y::^~~~!!!!!!!!!!!!!!!!~:.........:!7!!!!!!!!!!~~~~~~~~^^:::.^5@@&PJGB#PJ7??J7~:                                     :?Y5YYYY5Y7:                                                                                   
 #                                                                      .^?B##BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB#BY7#@&&&&&@&Y::^~~~~!!!!!!!!!!777777^.......:~!!!!!!!!!!!!~~~~~~~~^^^::::7&@@#5JBB#P?7???7~.                                    .~J5YYYYYY5YJ!.                                                                                 
-#                                                                        :!P##BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB#B??#@&&&&&&Y::^^~~~!!!!!!!!77?????J7:....:~77!!!!!!!!!!!!~~~~~~~^^^:::.~G@@@PJP#B#577???7^.                                    ^?YYYYYYYYYY5Y7:                                                                                
+#                                                                        :!P##BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB#B??#@&&&&&&Y::^^~~~!!!!!!!!77?????J7:....:~77!!!!!!!!!!!!~~~~~~~^^^:::.~G@@@r[team=]JP#B#577???7^.                                    ^?YYYYYYYYYY5Y7:                                                                                
 #                                                                         .^JB##BBBBBBBBBBGGBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB#B7J#@&&&&&5^:^^^~~~!!!!!7??????????7~:^!????77!!!!!!!!~~~~~~~~^^^:::.^Y@@@BJJ#BB#577???!^.                                   :!JYYYYJYYYYYY55J~.                                                                              
 #                                                                           :!P##BBBBBBBGGGGGGGGBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB#G7Y#@&&&@G!.:^~~~~~!!7???????????????????????77!!!!!~~~~~~~~^^^:::.:Y&@@@YJG#BBBJ7??J?!:                                   .~?JJJJJJJJJJYYY55Y7:                                                                             
-#                                                                            .~JB##BBBBBGGGGGGGGGGGGGGGBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB#G7?#@&&@#J.:^^^~~~!7??????????????????????????!!!!~~~~~~~~^^^:::.:Y#@&@PJP#BB#P?!???7~:                                   :!JJ??JJ?????JJYYY5Y7^.                                                                           
+#                                                                            .~JB##BBBBBGGGGGGGGGGGGGGGBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB#G7?#@&&@#J.:^^^~~~!7??????????????????????????!!!!~~~~~~~~^^^:::.:Y#@&@r[team=]JP#BB#P?!???7~:                                   :!JJ??JJ?????JJYYY5Y7^.                                                                           
 #                                                                              :7P##BBBGGGGGGGGGGGGGGGGGBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB#GJ7B@&@&5:.:^^~~~77??????????????????????????7!!~~~~~~~~^^^:::.:J#@@@G?PBBBB#Y77???!~:                                  .~7?????????????JJYYY5J~.                                                                          
 #                                                                               .^JB#BBGGGGGGGGGGGGGGGGGGGGBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB#BY7G@@&B!:::^^~!77??????????????????????????77!~~~~~~^^^^:::.:?&@@&P7PBBBB#G?7????!^.                                  :!????????????????JJJY5J!.                                                                         
 #                                                                                 :!5##BGGGGGGGGGGGGGGGGGGGGGBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBP7Y#@&Y:.::^^!7777????????????????????????77!~~~~~^^^^:::.^J&&@#5?G#BBBBB577???7~:                                  .~7??????????????????JJJ5Y7:                                                                        
@@ -424,37 +424,39 @@ effect give @a[team=snivy] jump_boost infinite 0 true
 #                                                                                                                                                                                           ..:^~~!7??JJJ??77~^^:.                                                                                                                                                                                               
 
 # tepig
-execute if entity @a[team=tepig] run attribute @p generic.movement_speed base set 0.13
-execute if entity @a[team=tepig] run attribute @p generic.max_health base set 24
-execute if entity @a[team=tepig] run attribute @p generic.attack_damage base set 6
+execute if entity @a[team=tepig] run attribute @r[team=tepig] generic.movement_speed base set 0.13
+execute if entity @a[team=tepig] run attribute @r[team=tepig] generic.max_health base set 24
+execute if entity @a[team=tepig] run attribute @r[team=tepig] generic.attack_damage base set 6
 
 effect give @a[team=tepig] fire_resistance infinite 0 true
 
 # oshawott
-execute if entity @a[team=oshawott] run attribute @p generic.movement_speed base set 0.11
-execute if entity @a[team=oshawott] run attribute @p generic.armor base set 1
-execute if entity @a[team=oshawott] run attribute @p generic.attack_damage base set 3
+execute if entity @a[team=oshawott] run attribute @r[team=oshawott] generic.movement_speed base set 0.11
+execute if entity @a[team=oshawott] run attribute @r[team=oshawott] generic.armor base set 1
+execute if entity @a[team=oshawott] run attribute @r[team=oshawott] generic.attack_damage base set 3
 
 effect give @a[team=oshawott] water_breathing infinite 0 true
 
 # axew
-execute if entity @a[team=axew] run attribute @p generic.movement_speed base set 0.13
-execute if entity @a[team=axew] run attribute @p generic.max_health base set 22
-execute if entity @a[team=axew] run attribute @p generic.attack_damage base set 6
+execute if entity @a[team=axew] run attribute @r[team=axew] generic.movement_speed base set 0.13
+execute if entity @a[team=axew] run attribute @r[team=axew] generic.max_health base set 22
+execute if entity @a[team=axew] run attribute @r[team=axew] generic.attack_damage base set 6
 
 # chespin
-execute if entity @a[team=chespin] run attribute @p generic.movement_speed base set 0.12
-execute if entity @a[team=chespin] run attribute @p generic.armor base set 1
-execute if entity @a[team=chespin] run attribute @p generic.attack_damage base set 4
+execute if entity @a[team=chespin] run attribute @r[team=chespin] generic.movement_speed base set 0.12
+execute if entity @a[team=chespin] run attribute @r[team=chespin] generic.armor base set 1
+execute if entity @a[team=chespin] run attribute @r[team=chespin] generic.attack_damage base set 4
 
 # fennekin
-execute if entity @a[team=fennekin] run attribute @p generic.movement_speed base set 0.11
-execute if entity @a[team=fennekin] run attribute @p generic.attack_damage base set 1
-execute if entity @a[team=fennekin] run attribute @p generic.max_health base set 18
+execute if entity @a[team=fennekin] run attribute @r[team=fennekin] generic.movement_speed base set 0.11
+execute if entity @a[team=fennekin] run attribute @r[team=fennekin] generic.attack_damage base set 1
+execute if entity @a[team=fennekin] run attribute @r[team=fennekin] generic.max_health base set 18
 
 # froakie
-execute if entity @a[team=fennekin] run attribute @p generic.movement_speed base set 0.12
-execute if entity @a[team=fennekin] run attribute @p generic.attack_damage base set 1
+execute if entity @a[team=froakie] run attribute @r[team=froakie] generic.movement_speed base set 0.12
+execute if entity @a[team=froakie] run attribute @r[team=froakie] generic.attack_damage base set 1
+
+effect give @a[team=froakie] water_breathing infinite 0 true
 
 # joey
 effect give @a[team=joey] slowness 2 0 true
