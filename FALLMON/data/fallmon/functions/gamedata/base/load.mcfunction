@@ -10,6 +10,7 @@ scoreboard players add @a radiation 0
 scoreboard objectives add stuffIguess dummy
 scoreboard objectives add playerSpecies dummy
 scoreboard objectives add health health
+scoreboard objectives add oxygen air
 scoreboard objectives setdisplay below_name health
 scoreboard objectives modify health displayname "HP"
 scoreboard objectives setdisplay list radiation
@@ -50,6 +51,7 @@ gamerule doDaylightCycle false
 gamerule naturalRegeneration false
 gamerule commandBlockOutput false
 gamerule mobGriefing false
+gamerule drowningDamage false
                                                                                                                                                                                                                                                                                                                                                                                        
                                                                                                                                                                                                                                                                                                                                                                                                                 
 #                                                                                                        .:.                                                                                                                                                                                                                                                                                                     

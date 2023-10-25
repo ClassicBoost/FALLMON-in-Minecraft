@@ -12,14 +12,18 @@ execute if score waterRad stuffIguess matches ..0 run function fallmon:gamedata/
 execute if score radiationTimer stuffIguess matches ..0 run function fallmon:gamedata/callevent/radiationreduce
 execute if score ambienceTimer stuffIguess matches ..0 run function fallmon:gamedata/callevent/ambiencetimer
 
-execute if entity @a[scores={health=..0}] run title @a[scores={health=..0}] actionbar {"text": "YOU FUCKING SUCK!!! AUTO UNINSTALLING!", "bold": true}
+title @a[scores={health=..0}] actionbar {"text": "YOU FUCKING SUCK!!! AUTO UNINSTALLING!", "bold": true}
 
-execute if entity @a[scores={health=..4}] run effect give @a[scores={health=..4}] slowness 1 1 true
+effect give @a[scores={health=..7}] slowness 1 0 true
+effect give @a[scores={health=..5}] slowness 1 1 true
+effect give @a[scores={health=..3}] slowness 1 2 true
 
 function fallmon:gamedata/radiation
 function fallmon:species/updatespecies
 
 attribute @r generic.attack_speed base set 99
+
+damage @r[scores={oxygen=..-19,health=2..}] 1 generic
 
 kill @e[type=bat]
 execute if score survivalMode stuffIguess matches 1 run kill @e[type=villager]
