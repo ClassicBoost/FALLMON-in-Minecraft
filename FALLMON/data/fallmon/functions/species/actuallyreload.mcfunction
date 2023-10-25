@@ -1,11 +1,3 @@
-# remove teams first
-team remove bulbasaur
-team remove charmander
-team remove squirtle
-team remove pikachu
-team remove riolu
-team remove snivy
-
 # add teams
 team add bulbasaur "Bulbasaur"
 team modify bulbasaur color green
@@ -87,10 +79,85 @@ team modify skitty color light_purple
 team modify skitty seeFriendlyInvisibles false
 team modify skitty friendlyFire true
 
+team add volpix "Volpix"
+team modify volpix color red
+team modify volpix seeFriendlyInvisibles false
+team modify volpix friendlyFire true
+
+team add phanpy "Phanpy"
+team modify phanpy color blue
+team modify phanpy seeFriendlyInvisibles false
+team modify phanpy friendlyFire true
+
+team add turtwig "Turtwig"
+team modify turtwig color dark_green
+team modify turtwig seeFriendlyInvisibles false
+team modify turtwig friendlyFire true
+
+team add chimchar "Chimchar"
+team modify chimchar color gold
+team modify chimchar seeFriendlyInvisibles false
+team modify chimchar friendlyFire true
+
+team add piplup "Piplup"
+team modify piplup color blue
+team modify piplup seeFriendlyInvisibles false
+team modify piplup friendlyFire true
+
+team add shinx "Shinx"
+team modify shinx color gray
+team modify shinx seeFriendlyInvisibles false
+team modify shinx friendlyFire true
+
 team add riolu "Riolu"
 team modify riolu color blue
 team modify riolu seeFriendlyInvisibles false
 team modify riolu friendlyFire true
+
+team add wooper "Wooper"
+team modify wooper color blue
+team modify wooper seeFriendlyInvisibles false
+team modify wooper friendlyFire true
+
+team add growlithe "Growlithe"
+team modify growlithe color gold
+team modify growlithe seeFriendlyInvisibles false
+team modify growlithe friendlyFire true
+
+team add teddiursa "Teddiursa"
+team modify teddiursa color gold
+team modify teddiursa seeFriendlyInvisibles false
+team modify teddiursa friendlyFire true
+
+team add buneary "Buneary"
+team modify buneary color gold
+team modify buneary seeFriendlyInvisibles false
+team modify buneary friendlyFire true
+
+team add togepi "Togepi"
+team modify togepi color gray
+team modify togepi seeFriendlyInvisibles false
+team modify togepi friendlyFire true
+
+team add mareep "Mareep"
+team modify mareep color blue
+team modify mareep seeFriendlyInvisibles false
+team modify mareep friendlyFire true
+
+team add elekid "Elekid"
+team modify elekid color yellow
+team modify elekid seeFriendlyInvisibles false
+team modify elekid friendlyFire true
+
+team add pachirisu "Pachirisu"
+team modify pachirisu color aqua
+team modify pachirisu seeFriendlyInvisibles false
+team modify pachirisu friendlyFire true
+
+team add azurill "Azurill"
+team modify azurill color blue
+team modify azurill seeFriendlyInvisibles false
+team modify azurill friendlyFire true
 
 team add snivy "Snivy"
 team modify snivy color green
@@ -107,12 +174,27 @@ team modify oshawott color aqua
 team modify oshawott seeFriendlyInvisibles false
 team modify oshawott friendlyFire true
 
+team add axew "Axew"
+team modify axew color dark_green
+team modify axew seeFriendlyInvisibles false
+team modify axew friendlyFire true
+
+team add chespin "Chespin"
+team modify chespin color green
+team modify chespin seeFriendlyInvisibles false
+team modify chespin friendlyFire true
+
+team add fennekin "Fennekin"
+team modify fennekin color red
+team modify fennekin seeFriendlyInvisibles false
+team modify fennekin friendlyFire true
+
+team add froakie "Froakie"
+team modify froakie color aqua
+team modify froakie seeFriendlyInvisibles false
+team modify froakie friendlyFire true
+
 team add joey "Joey"
 team modify joey color dark_purple
 team modify joey seeFriendlyInvisibles false
 team modify joey friendlyFire true
-
-team add rattata "Rattata"
-team modify rattata color dark_purple
-team modify rattata seeFriendlyInvisibles false
-team modify rattata friendlyFire true
