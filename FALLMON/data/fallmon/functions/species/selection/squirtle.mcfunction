@@ -23,5 +23,5 @@ tellraw @p {"text": "Speed: x1", "color" : "#47FF47"}
 tellraw @p {"text": "Natural Armor: 6", "color" : "#47FF47"}
 tellraw @p {"text": "HP: 20", "color" : "#47FF47"}
 tellraw @p {"text": "DMG: x1", "color" : "#47FF47"}
-tellraw @p {"text": "Knockpack: 0.2", "color" : "#47FF47"}
+tellraw @p {"text": "Knockback: 0.2", "color" : "#47FF47"}
 playsound minecraft:entity.axolotl.splash master @a ~ ~ ~ 1000 2

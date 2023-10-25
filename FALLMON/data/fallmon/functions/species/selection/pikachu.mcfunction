@@ -23,5 +23,5 @@ tellraw @p {"text": "Speed: x1.5", "color" : "#47FF47"}
 tellraw @p {"text": "Natural Armor: None", "color" : "#47FF47"}
 tellraw @p {"text": "HP: 18", "color" : "#47FF47"}
 tellraw @p {"text": "DMG: x1.075", "color" : "#47FF47"}
-tellraw @p {"text": "Knockpack: None", "color" : "#47FF47"}
+tellraw @p {"text": "Knockback: None", "color" : "#47FF47"}
 playsound minecraft:entity.lightning_bolt.thunder master @a ~ ~ ~ 1000 2

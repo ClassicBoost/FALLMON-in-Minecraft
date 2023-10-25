@@ -1,6 +1,6 @@
 # UNUSED(?), WE ARE USING TEAM UPDATE INSTEAD
 
-team join default @p
+team join psyduck @p
 
 # data
 attribute @p generic.movement_speed base set 0.1
@@ -23,5 +23,5 @@ tellraw @p {"text": "Speed: x1", "color" : "#47FF47"}
 tellraw @p {"text": "Natural Armor: None", "color" : "#47FF47"}
 tellraw @p {"text": "HP: 22", "color" : "#47FF47"}
 tellraw @p {"text": "DMG: x1", "color" : "#47FF47"}
-tellraw @p {"text": "Knockpack: None", "color" : "#47FF47"}
+tellraw @p {"text": "Knockback: None", "color" : "#47FF47"}
 playsound block.note_block.pling master @a ~ ~ ~ 1000 0

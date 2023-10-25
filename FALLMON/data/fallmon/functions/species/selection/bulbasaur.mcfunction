@@ -23,5 +23,5 @@ tellraw @p {"text": "Speed: x0.8", "color" : "#47FF47"}
 tellraw @p {"text": "Natural Armor: None", "color" : "#47FF47"}
 tellraw @p {"text": "HP: 24", "color" : "#47FF47"}
 tellraw @p {"text": "DMG: x1", "color" : "#47FF47"}
-tellraw @p {"text": "Knockpack: x0.5", "color" : "#47FF47"}
+tellraw @p {"text": "Knockback: x0.5", "color" : "#47FF47"}
 playsound minecraft:block.grass.place master @a ~ ~ ~ 1000 2
