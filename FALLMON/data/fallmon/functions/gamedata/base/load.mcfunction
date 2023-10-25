@@ -14,6 +14,7 @@ scoreboard objectives add oxygen air
 scoreboard objectives setdisplay below_name health
 scoreboard objectives modify health displayname "HP"
 scoreboard objectives setdisplay list radiation
+scoreboard players set survivalMode stuffIguess 0
 
 scoreboard players set heal stuffIguess 1
 scoreboard players set waterRad stuffIguess 1

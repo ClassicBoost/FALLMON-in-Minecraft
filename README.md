@@ -14,7 +14,7 @@ This datapack is capatible with version 1.20.2 and later. May not work for older
 -----------------------------------------------
 ## How to download and play the datapack
 1. Have Minecraft 1.20.2 or later installed (may work on older versions)
-2. Go to code and download zip
+2. Go to code/releases and download zip
 3. Unzip the datapack
 4. Create a new world, go to more, click datapacks and put the FALLMON folder inside the folder. If you are using an existing world; go to edit, open world folder then go to datapacks, and put the datapack in there.
 5. Enjoy (see wiki for commands)
