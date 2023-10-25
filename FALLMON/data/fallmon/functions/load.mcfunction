@@ -16,6 +16,7 @@ scoreboard objectives setdisplay list radiation
 
 scoreboard players set heal stuffIguess 1
 scoreboard players set waterRad stuffIguess 1
+scoreboard players set ambienceTimer stuffIguess 500
 
 bossbar add 1 "You are perfectly fine!"
 bossbar set 1 color white

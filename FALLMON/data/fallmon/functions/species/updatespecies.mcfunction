@@ -106,7 +106,7 @@ execute if entity @a[team=turtwig] run attribute @p generic.attack_damage base s
 # naw man, this is just a fucking charmander rip off
 execute if entity @a[team=chimchar] run attribute @p generic.movement_speed base set 0.09
 execute if entity @a[team=chimchar] run attribute @p generic.attack_damage base set 3
-effect give @a[team=volpix] fire_resistance infinite 1 true
+effect give @a[team=chimchar] fire_resistance infinite 1 true
 
 # piplup
 # bf as piplup??????????
