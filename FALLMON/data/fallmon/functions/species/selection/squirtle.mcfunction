@@ -11,7 +11,7 @@ attribute @p generic.attack_knockback base set 0.2
 
 effect clear @p fire_resistance
 effect clear @p jump_boost
-effect give @p water_breathing 1 0 true
+effect give @p water_breathing infinite 0 true
 effect clear @p haste
 
 title @p actionbar {"text": "You are playing as Squirtle", "color": "#47FF47"}

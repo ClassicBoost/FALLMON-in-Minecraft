@@ -28,4 +28,4 @@ tellraw @p {"text": "Natural Armor: 5", "color" : "#47FF47"}
 tellraw @p {"text": "HP: 25", "color" : "#47FF47"}
 tellraw @p {"text": "DMG: x1", "color" : "#47FF47"}
 tellraw @p {"text": "Knockback: 0.4", "color" : "#47FF47"}
-playsound block.note_block.pling master @a ~ ~ ~ 1000 0
+playsound entity.axolotl.splash master @a ~ ~ ~ 1000 0

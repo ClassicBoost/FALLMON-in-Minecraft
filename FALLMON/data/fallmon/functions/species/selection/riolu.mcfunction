@@ -10,9 +10,9 @@ attribute @p generic.attack_damage base set 3.5
 attribute @p generic.attack_knockback base set 0.5
 
 effect clear @p fire_resistance
-effect give @p jump_boost 1 0 true
+effect give @p jump_boost infinite 0 true
 effect clear @p water_breathing
-effect give @p haste 1 0 true
+effect give @p haste infinite 0 true
 
 title @p actionbar {"text": "You are playing as Riolu", "color": "#47FF47"}
 
