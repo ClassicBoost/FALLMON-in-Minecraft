@@ -8,7 +8,7 @@ scoreboard players remove radiationTimer stuffIguess 1
 scoreboard players remove ambienceTimer stuffIguess 1
 
 execute if score heal stuffIguess matches ..0 run function fallmon:gamedata/callevent/heallmao
-execute if score waterRad stuffIguess matches ..0 run function fallmon:gamedata/callevent/waterrad
+execute if score waterRad stuffIguess matches ..0 run function fallmon:gamedata/callevent/shortdelay
 execute if score radiationTimer stuffIguess matches ..0 run function fallmon:gamedata/callevent/radiationreduce
 execute if score ambienceTimer stuffIguess matches ..0 run function fallmon:gamedata/callevent/ambiencetimer
 
