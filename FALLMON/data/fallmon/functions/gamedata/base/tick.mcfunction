@@ -33,5 +33,8 @@ attribute @r generic.attack_speed base set 99
 
 damage @r[scores={oxygen=..-19,health=2..}] 1 generic
 
+execute if score survivalMode stuffIguess matches 0 run enchant @a unbreaking 3
+execute if score survivalMode stuffIguess matches 1 run clear @a shield
+
 kill @e[type=bat]
 execute if score survivalMode stuffIguess matches 1 run kill @e[type=villager]

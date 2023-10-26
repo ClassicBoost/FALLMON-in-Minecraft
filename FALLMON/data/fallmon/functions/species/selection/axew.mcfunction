@@ -5,7 +5,7 @@ team join axew @p
 
 # data
 # default stats
-attribute @p generic.movement_speed base set 0.13
+attribute @p generic.movement_speed base set 0.07
 attribute @p generic.armor base set 0
 attribute @p generic.max_health base set 22
 attribute @p generic.attack_damage base set 6
@@ -23,7 +23,7 @@ title @p actionbar {"text": "You are playing as Axew", "color": "#47FF47"}
 effect give @p regeneration 2 255 true
 # change these to what is updated stats, as for "You have chosen " put the species name there.
 tellraw @p {"text": "You have chosen Axew", "color" : "#47FF47", "bold": true}
-tellraw @p {"text": "Speed: x1.3", "color" : "#47FF47"}
+tellraw @p {"text": "Speed: x0.7", "color" : "#47FF47"}
 tellraw @p {"text": "Natural Armor: None", "color" : "#47FF47"}
 tellraw @p {"text": "HP: 22", "color" : "#47FF47"}
 tellraw @p {"text": "DMG: x3", "color" : "#47FF47"}

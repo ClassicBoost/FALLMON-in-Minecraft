@@ -11,7 +11,7 @@ attribute @p generic.max_health base set 16
 attribute @p generic.attack_damage base set 3
 attribute @p generic.attack_knockback base set 0
 
-effect give @p fire_resistance infinite 1 true
+effect give @p fire_resistance 2 1 true
 effect clear @p jump_boost
 effect clear @p water_breathing
 effect clear @p haste

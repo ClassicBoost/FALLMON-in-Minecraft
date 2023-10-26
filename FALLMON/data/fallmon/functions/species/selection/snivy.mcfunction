@@ -10,7 +10,7 @@ attribute @p generic.attack_damage base set 1.5
 attribute @p generic.attack_knockback base set 0.2
 
 effect clear @p fire_resistance
-effect give @p jump_boost infinite 0 true
+effect give @p jump_boost 2 0 true
 effect clear @p water_breathing
 effect clear @p haste
 

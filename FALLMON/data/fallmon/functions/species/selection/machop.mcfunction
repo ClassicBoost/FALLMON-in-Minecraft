@@ -12,7 +12,7 @@ attribute @p generic.attack_knockback base set 0
 effect clear @p fire_resistance
 effect clear @p jump_boost
 effect clear @p water_breathing
-effect give @p haste infinite 1 true
+effect give @p haste 2 1 true
 
 title @p actionbar {"text": "You are playing as Machop", "color": "#47FF47"}
 

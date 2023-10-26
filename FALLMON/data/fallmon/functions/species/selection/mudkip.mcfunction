@@ -13,7 +13,7 @@ attribute @p generic.attack_knockback base set 2
 
 effect clear @p fire_resistance
 effect clear @p jump_boost
-effect give @p water_breathing infinite 1 true
+effect give @p water_breathing 2 1 true
 effect clear @p haste
 
 # at the end put the species name
