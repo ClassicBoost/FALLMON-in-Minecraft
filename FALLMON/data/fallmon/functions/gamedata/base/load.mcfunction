@@ -12,9 +12,11 @@ scoreboard objectives setdisplay list radiation
 
 scoreboard objectives add stuffIguess dummy
 scoreboard objectives add playerSpecies dummy
+scoreboard objectives add tempRadiation dummy
 scoreboard objectives add oxygen air
 scoreboard objectives add hunger food
 scoreboard objectives add health health
+scoreboard objectives modify hunger displayname "World Hunger"
 scoreboard objectives setdisplay below_name health
 scoreboard objectives modify health displayname "HP"
 

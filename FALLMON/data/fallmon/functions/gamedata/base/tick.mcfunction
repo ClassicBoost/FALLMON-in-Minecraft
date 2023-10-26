@@ -12,7 +12,7 @@ execute if score waterRad stuffIguess matches ..0 run function fallmon:gamedata/
 execute if score radiationTimer stuffIguess matches ..0 run function fallmon:gamedata/callevent/radiationreduce
 execute if score ambienceTimer stuffIguess matches ..0 run function fallmon:gamedata/callevent/ambiencetimer
 
-execute if score waterRad stuffIguess matches 5 run playsound block.note_block.harp block @a[scores={health=..4}] ~ ~ ~ 100000000000000000000000000000 0
+execute if score waterRad stuffIguess matches 5 run playsound block.note_block.harp block @a[gamemode=!creative,gamemode=!spectator,scores={health=..4}] ~ ~ ~ 100000000000000000000000000000 0
 
 title @a[scores={health=..0}] actionbar {"text": "YOU FUCKING SUCK!!! AUTO UNINSTALLING!", "bold": true}
 
@@ -22,6 +22,9 @@ effect give @a[scores={health=..3}] slowness 1 2 true
 
 function fallmon:gamedata/radiation
 function fallmon:species/updatespecies
+
+# damage @r[nbt={Dimension:"minecraft:the_nether"}] 99 bad_respawn_point
+damage @r[nbt={Dimension:"minecraft:the_end"}] 99 bad_respawn_point
 
 attribute @r generic.attack_speed base set 99
 
