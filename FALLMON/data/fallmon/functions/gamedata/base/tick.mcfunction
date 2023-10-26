@@ -20,6 +20,9 @@ effect give @a[scores={health=..7}] slowness 1 0 true
 effect give @a[scores={health=..5}] slowness 1 1 true
 effect give @a[scores={health=..3}] slowness 1 2 true
 
+scoreboard players add timeSinceWorld stuffIguess 1
+execute if score timeSinceWorld stuffIguess matches ..10 run scoreboard players set survivalMode stuffIguess 0
+
 function fallmon:gamedata/radiation
 function fallmon:species/updatespecies
 
