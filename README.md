@@ -5,9 +5,9 @@ The data pack to Minecraft. Adds Fallout and Pokemon features.
 This datapack is capatible with version 1.20.2 and later. May not work for older versions.
 
 # Features
-* 38 choosable Pokémon
+* 38 available Pokémon
    * They don't have moves yet, only modifiers.
-* Radiation
+* Radiation (WIP)
 * Some game changes
   * No mob griefing, slower time, etc.
 ## To see changes made to the datapack, check out the changelog [here](https://github.com/ClassicBoost/FALLMON-Data-Pack/blob/main/CHANGELOG.md).
@@ -26,7 +26,7 @@ This datapack is capatible with version 1.20.2 and later. May not work for older
   * Wiki page
 * [Schmeckeldorf](https://www.youtube.com/@Schmeckeldorf.):
   * Coder
-  * Also made the pokémon data
+  * Made the Pokémon data
 <br>
 Nintendo - Pokémon<br>
 Bethesda / Interplay Entertainment - Fallout<br>
