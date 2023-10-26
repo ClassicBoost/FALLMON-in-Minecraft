@@ -201,7 +201,7 @@ effect give @a[team=snivy] jump_boost infinite 0 true
 
 # tepig
 execute as @a[team=tepig] run attribute @s[team=tepig] generic.movement_speed base set 0.13
-execute as @a[team=tepig] run attribute @s[team=tepig] generic.max_health base set 24
+execute as @a[team=tepig] run attribute @s[team=tepig] generic.max_health base set 14
 execute as @a[team=tepig] run attribute @s[team=tepig] generic.attack_damage base set 6
 
 effect give @a[team=tepig] fire_resistance infinite 0 true
