@@ -2,7 +2,7 @@ function fallmon:species/actuallyreload
 tellraw @a {"text": "FALLMON Datapack Loaded", "color" : "#47FF47", "bold": true}
 tellraw @a {"text": "Version: Beta 1.1.2", "color" : "#47FF47", "italic": true}
 tellraw @a {"text": "Welcome to the wasteland, you are... REDACTED years after the warhead. Please ensure all safety equipment is with you at all times.", "color" : "#47FF47"}
-playsound block.note_block.banjo master @a ~ ~ ~ 1000000000000000000 1
+playsound fallmon.intro master @a ~ ~ ~ 1000000000000000000 1
 
 
 # add the score boards
@@ -40,8 +40,8 @@ bossbar set 3 color yellow
 bossbar set 3 name {"text": "You are slightly fatigued", "color": "#FFFF91", "bold": true}
 
 bossbar add 4 "You are ill"
-bossbar set 4 max 100
-bossbar set 4 value 30
+bossbar set 4 max 10
+bossbar set 4 value 3
 bossbar set 4 color yellow
 bossbar set 4 name {"text": "You are ill", "color": "#FFFF2D", "bold": true}
 
@@ -52,8 +52,8 @@ bossbar set 5 color red
 bossbar set 5 name {"text": "You are very ill", "color": "#FF954F", "bold": true}
 
 bossbar add 6 "Your skin is decaying"
-bossbar set 6 max 100
-bossbar set 6 value 60
+bossbar set 6 max 10
+bossbar set 6 value 6
 bossbar set 6 color red
 bossbar set 6 name {"text": "Your skin is decaying", "color": "#FF291E", "bold": true}
 
@@ -70,6 +70,9 @@ gamerule naturalRegeneration false
 gamerule commandBlockOutput false
 gamerule mobGriefing false
 gamerule drowningDamage false
+gamerule doTraderSpawning false
+gamerule doInsomnia false
+gamerule maxEntityCramming 0
                                                                                                                                                                                                                                                                                                                                                                                        
                                                                                                                                                                                                                                                                                                                                                                                                                 
 #                                                                                                        .:.                                                                                                                                                                                                                                                                                                     
