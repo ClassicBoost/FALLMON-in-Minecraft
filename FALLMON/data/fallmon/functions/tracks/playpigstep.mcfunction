@@ -1,0 +1,1 @@
+playsound music_disc.pigstep record @s ~ ~ ~ 1 1 1

@@ -24,4 +24,4 @@ tellraw @p {"text": "Natural Armor: -4", "color" : "#47FF47"}
 tellraw @p {"text": "HP: 16", "color" : "#47FF47"}
 tellraw @p {"text": "DMG: x0.75", "color" : "#47FF47"}
 tellraw @p {"text": "Knockback: 0.2", "color" : "#47FF47"}
-playsound minecraft:entity.villager.no master @a ~ ~ ~ 1000 2
+playsound minecraft:choose.snivy master @a ~ ~ ~ 1000 1

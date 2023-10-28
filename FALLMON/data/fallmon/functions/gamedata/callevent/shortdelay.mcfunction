@@ -24,18 +24,18 @@ playsound block.note_block.bit block @a[gamemode=!creative,gamemode=!spectator,s
 
 function fallmon:species/updatespecies
 
-scoreboard players remove @a[nbt={Dimension:"minecraft:overworld"},scores={tempRadiation=5..}] radiation 5
-playsound entity.player.breath player @a[nbt={Dimension:"minecraft:overworld"},scores={tempRadiation=5..}] ~ ~ ~ 1000000000000000000000000000 1
-scoreboard players remove @a[nbt={Dimension:"minecraft:overworld"},scores={tempRadiation=5..}] tempRadiation 5
-
-scoreboard players remove @a[nbt={Dimension:"minecraft:overworld"},scores={tempRadiation=4}] radiation 4
-scoreboard players remove @a[nbt={Dimension:"minecraft:overworld"},scores={tempRadiation=4}] tempRadiation 4
-
-scoreboard players remove @a[nbt={Dimension:"minecraft:overworld"},scores={tempRadiation=3}] radiation 3
-scoreboard players remove @a[nbt={Dimension:"minecraft:overworld"},scores={tempRadiation=3}] tempRadiation 3
+scoreboard players remove @a[nbt={Dimension:"minecraft:overworld"},scores={tempRadiation=1}] radiation 1
+scoreboard players remove @a[nbt={Dimension:"minecraft:overworld"},scores={tempRadiation=1}] tempRadiation 1
 
 scoreboard players remove @a[nbt={Dimension:"minecraft:overworld"},scores={tempRadiation=2}] radiation 2
 scoreboard players remove @a[nbt={Dimension:"minecraft:overworld"},scores={tempRadiation=2}] tempRadiation 2
 
-scoreboard players remove @a[nbt={Dimension:"minecraft:overworld"},scores={tempRadiation=1}] radiation 1
-scoreboard players remove @a[nbt={Dimension:"minecraft:overworld"},scores={tempRadiation=1}] tempRadiation 1
+scoreboard players remove @a[nbt={Dimension:"minecraft:overworld"},scores={tempRadiation=3}] radiation 3
+scoreboard players remove @a[nbt={Dimension:"minecraft:overworld"},scores={tempRadiation=3}] tempRadiation 3
+
+scoreboard players remove @a[nbt={Dimension:"minecraft:overworld"},scores={tempRadiation=4}] radiation 4
+scoreboard players remove @a[nbt={Dimension:"minecraft:overworld"},scores={tempRadiation=4}] tempRadiation 4
+
+scoreboard players remove @a[nbt={Dimension:"minecraft:overworld"},scores={tempRadiation=5..}] radiation 5
+playsound entity.player.breath player @a[nbt={Dimension:"minecraft:overworld"},scores={tempRadiation=5..}] ~ ~ ~ 1000000000000000000000000000 1
+scoreboard players remove @a[nbt={Dimension:"minecraft:overworld"},scores={tempRadiation=5..}] tempRadiation 5

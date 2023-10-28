@@ -28,4 +28,4 @@ tellraw @p {"text": "Natural Armor: None", "color" : "#47FF47"}
 tellraw @p {"text": "HP: 14", "color" : "#47FF47"}
 tellraw @p {"text": "DMG: x3", "color" : "#47FF47"}
 tellraw @p {"text": "Knockback: None", "color" : "#47FF47"}
-playsound block.note_block.pling master @a ~ ~ ~ 1000 0
+playsound minecraft:choose.tepig master @a ~ ~ ~ 1000 1

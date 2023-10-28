@@ -24,4 +24,4 @@ tellraw @p {"text": "Natural Armor: 2", "color" : "#47FF47"}
 tellraw @p {"text": "HP: 14", "color" : "#47FF47"}
 tellraw @p {"text": "DMG: x1.75", "color" : "#47FF47"}
 tellraw @p {"text": "Knockback: x0.5", "color" : "#47FF47"}
-playsound minecraft:entity.wolf.whine master @a ~ ~ ~ 1000 2
+playsound minecraft:choose.riolu master @a ~ ~ ~ 1000 1

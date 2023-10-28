@@ -18,7 +18,7 @@ execute if score survivalMode stuffIguess matches ..0 if score isolationMode stu
 
 execute if score waterRad stuffIguess matches 5 run playsound block.note_block.bit block @a[gamemode=!creative,gamemode=!spectator,scores={health=..4}] ~ ~ ~ 100000000000000000000000000000 1
 
-title @a[scores={health=..0}] actionbar {"text": "YOU FUCKING SUCK!!! AUTO UNINSTALLING!", "bold": true}
+title @a[scores={health=..0}] actionbar {"text": "OH MY GOD YOU SUCK! AUTO-UNINSTALLING!", "bold": true}
 execute if score fallmonian stuffIguess matches 1.. run gamemode spectator @a[scores={health=..0}]
 
 effect give @a[scores={health=..7}] slowness 1 0 true
@@ -28,6 +28,8 @@ effect give @a[scores={health=..3}] slowness 1 2 true
 scoreboard players add timeSinceWorld stuffIguess 1
 execute if score timeSinceWorld stuffIguess matches ..10 run scoreboard players set survivalMode stuffIguess 0
 execute if score timeSinceWorld stuffIguess matches ..10 run scoreboard players set isolationMode stuffIguess 0
+
+function fallmon:gamedata/hurt
 
 scoreboard players remove shortestDelay stuffIguess 1
 
@@ -41,6 +43,10 @@ attribute @r generic.attack_speed base set 99
 
 execute if score fallmonian stuffIguess matches 1.. run gamerule doMobLoot false
 execute if score fallmonian stuffIguess matches ..0 run gamerule doMobLoot true
+
+# IGNORE THIS WARNING!!!!!
+execute if score fallmonian stuffIguess matches 1.. run gamerule pvp false
+execute if score fallmonian stuffIguess matches ..0 run gamerule pvp true
 
 damage @r[scores={oxygen=..-19,health=2..}] 1 generic
 
