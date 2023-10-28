@@ -4,6 +4,8 @@ The data pack to Minecraft. Adds Fallout and Pokemon features.
 
 This datapack is capatible with version 1.20.2 and later. May not work for older versions.
 
+[**Resource Pack**](https://drive.google.com/file/d/1oFSNdoeNusZK8g1Sl5QYOq_vnhQVzglq/view?usp=sharing)
+
 # Features
 * 38 available Pokémon
    * They don't have moves yet, only modifiers.
