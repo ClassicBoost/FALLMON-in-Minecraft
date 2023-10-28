@@ -25,6 +25,8 @@ scoreboard players set heal stuffIguess 200
 scoreboard players set waterRad stuffIguess 20
 scoreboard players set ambienceTimer stuffIguess 500
 
+scoreboard objectives modify stuffIguess displayname "Debug Info"
+
 bossbar add 1 "You are perfectly fine!"
 bossbar set 1 color white
 

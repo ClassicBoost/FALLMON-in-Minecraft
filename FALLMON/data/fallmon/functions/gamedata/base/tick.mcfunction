@@ -13,9 +13,13 @@ execute if score radiationTimer stuffIguess matches ..0 run function fallmon:gam
 execute if score ambienceTimer stuffIguess matches ..0 run function fallmon:gamedata/callevent/ambiencetimer
 execute if score shortestDelay stuffIguess matches ..0 run function fallmon:gamedata/callevent/veryshortfuckingdelay
 
+execute if score survivalMode stuffIguess matches 1.. if score isolationMode stuffIguess matches 2.. run scoreboard players set fallmonian stuffIguess 1
+execute if score survivalMode stuffIguess matches ..0 if score isolationMode stuffIguess matches ..1 run scoreboard players set fallmonian stuffIguess 0
+
 execute if score waterRad stuffIguess matches 5 run playsound block.note_block.bit block @a[gamemode=!creative,gamemode=!spectator,scores={health=..4}] ~ ~ ~ 100000000000000000000000000000 1
 
 title @a[scores={health=..0}] actionbar {"text": "YOU FUCKING SUCK!!! AUTO UNINSTALLING!", "bold": true}
+execute if score fallmonian stuffIguess matches 1.. run gamemode spectator @a[scores={health=..0}]
 
 effect give @a[scores={health=..7}] slowness 1 0 true
 effect give @a[scores={health=..5}] slowness 1 1 true
@@ -34,6 +38,9 @@ function fallmon:species/updatespecies
 damage @r[nbt={Dimension:"minecraft:the_end"}] 99 bad_respawn_point
 
 attribute @r generic.attack_speed base set 99
+
+execute if score fallmonian stuffIguess matches 1.. run gamerule doMobLoot false
+execute if score fallmonian stuffIguess matches ..0 run gamerule doMobLoot true
 
 damage @r[scores={oxygen=..-19,health=2..}] 1 generic
 
