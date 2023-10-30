@@ -16,7 +16,7 @@ execute if score fallmonian stuffIguess matches 1.. run scoreboard players add @
 
 time add 5
 
-playsound block.note_block.bit block @a[gamemode=!creative,gamemode=!spectator,scores={health=..4}] ~ ~ ~ 100000000000000000000000000000 0.5
+# playsound block.note_block.bit block @a[gamemode=!creative,gamemode=!spectator,scores={health=..4}] ~ ~ ~ 100000000000000000000000000000 0.5
 
 # playsound minecraft:ambient.crimson_forest.loop player @a ~ ~ ~ 10000000000000 0
 
