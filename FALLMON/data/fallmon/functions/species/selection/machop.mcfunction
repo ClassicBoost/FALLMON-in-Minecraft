@@ -24,4 +24,4 @@ tellraw @p {"text": "Natural Armor: None", "color" : "#47FF47"}
 tellraw @p {"text": "HP: 24", "color" : "#47FF47"}
 tellraw @p {"text": "DMG: x1", "color" : "#47FF47"}
 tellraw @p {"text": "Knockback: None", "color" : "#47FF47"}
-playsound block.note_block.pling master @a ~ ~ ~ 1000 0
+playsound pokemon.machop master @a ~ ~ ~ 1000 1

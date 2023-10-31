@@ -69,14 +69,14 @@ tellraw @a[nbt={SelectedItem:{id:"minecraft:milk_bucket"}}] "NUH UH, NO MILK FOR
 give @a[nbt={SelectedItem:{id:"minecraft:milk_bucket"}}] bucket
 clear @a[nbt={SelectedItem:{id:"minecraft:milk_bucket"}}] milk_bucket
 
-playsound minecraft:fallmon.radaway neutral @a[nbt={SelectedItem:{id:"minecraft:diamond_hoe"}}] ~ ~ ~ 100000000000 1 1
-execute if score survivalMode stuffIguess matches ..0 run title @a[nbt={SelectedItem:{id:"minecraft:diamond_hoe"}}] actionbar {"text": "Your radiation is reduced by 25", "color": "#47FF47"}
+playsound minecraft:fallmon.radaway neutral @a[nbt={SelectedItem:{id:"minecraft:diamond_hoe"}},scores={radiation=1..}] ~ ~ ~ 100000000000 1 1
+execute if score survivalMode stuffIguess matches ..0 run title @a[nbt={SelectedItem:{id:"minecraft:diamond_hoe"}},scores={radiation=1..}] actionbar {"text": "Your radiation is reduced by 25", "color": "#47FF47"}
 execute if score survivalMode stuffIguess matches ..0 run scoreboard players remove @a[nbt={SelectedItem:{id:"minecraft:diamond_hoe"}}] radiation 25
-execute if score survivalMode stuffIguess matches 1.. run title @a[nbt={SelectedItem:{id:"minecraft:diamond_hoe"}}] actionbar {"text": "Your radiation is reduced by 50", "color": "#47FF47"}
+execute if score survivalMode stuffIguess matches 1.. run title @a[nbt={SelectedItem:{id:"minecraft:diamond_hoe"}},scores={radiation=1..}] actionbar {"text": "Your radiation is reduced by 50", "color": "#47FF47"}
 execute if score survivalMode stuffIguess matches 1.. run scoreboard players remove @a[nbt={SelectedItem:{id:"minecraft:diamond_hoe"}}] radiation 50
-damage @r[nbt={SelectedItem:{id:"minecraft:diamond_hoe"}},scores={health=5..}] 4 sweet_berry_bush
-effect give @a[nbt={SelectedItem:{id:"minecraft:diamond_hoe"}}] weakness 10 0 true
-clear @a[nbt={SelectedItem:{id:"minecraft:diamond_hoe"}}] diamond_hoe
+damage @r[nbt={SelectedItem:{id:"minecraft:diamond_hoe"}},scores={health=5..,radiation=1..}] 4 sweet_berry_bush
+effect give @a[nbt={SelectedItem:{id:"minecraft:diamond_hoe"}},scores={radiation=1..}] weakness 10 0 true
+clear @a[nbt={SelectedItem:{id:"minecraft:diamond_hoe"}},scores={radiation=1..}] diamond_hoe 1
 
 kill @e[type=bat]
 

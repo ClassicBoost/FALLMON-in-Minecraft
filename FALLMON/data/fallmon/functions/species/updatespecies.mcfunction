@@ -50,7 +50,7 @@ effect give @a[team=psyduck] water_breathing 2 1 true
 
 # cubone
 execute as @a[team=cubone] run attribute @s[team=cubone] generic.movement_speed base set 0.12
-execute as @a[team=cubone] run attribute @s[team=cubone] generic.attack_damage base set 4
+execute as @a[team=cubone] run attribute @s[team=cubone] generic.armor base set 4
 execute as @a[team=cubone] run attribute @s[team=cubone] generic.attack_knockback base set 0.2
 
 # eevee

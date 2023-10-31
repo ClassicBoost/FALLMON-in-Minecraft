@@ -11,6 +11,8 @@ execute at @e[type=husk] as @a[distance=..2] run playsound fallmon.radbad neutra
 scoreboard players add @a[nbt={Dimension:"minecraft:the_nether"}] radiation 1
 scoreboard players add @a[nbt={Dimension:"minecraft:the_nether"}] tempRadiation 1
 
+# execute as @a[y=256] run playsound minecraft:fallmon.howthefuck master @a ~ ~ ~ 100000000000000 1 1
+
 execute if score fallmonian stuffIguess matches 1.. run scoreboard players add @a[nbt={Dimension:"minecraft:the_nether"}] radiation 1
 execute if score fallmonian stuffIguess matches 1.. run scoreboard players add @a[nbt={Dimension:"minecraft:the_nether"}] tempRadiation 1
 

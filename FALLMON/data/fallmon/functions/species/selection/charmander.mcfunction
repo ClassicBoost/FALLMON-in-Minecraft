@@ -24,4 +24,4 @@ tellraw @p {"text": "Natural Armor: None", "color" : "#47FF47"}
 tellraw @p {"text": "HP: 20", "color" : "#47FF47"}
 tellraw @p {"text": "DMG: x1.075", "color" : "#47FF47"}
 tellraw @p {"text": "Knockback: None", "color" : "#47FF47"}
-playsound minecraft:entity.blaze.ambient master @a ~ ~ ~ 1000 2
+playsound minecraft:choose.charmander master @a ~ ~ ~ 1000 1

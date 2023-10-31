@@ -28,4 +28,4 @@ tellraw @p {"text": "Natural Armor: None", "color" : "#47FF47"}
 tellraw @p {"text": "HP: 22", "color" : "#47FF47"}
 tellraw @p {"text": "DMG: x3", "color" : "#47FF47"}
 tellraw @p {"text": "Knockback: None", "color" : "#47FF47"}
-playsound entity.ender_dragon.ambient master @a ~ ~ ~ 1000 2
+playsound minecraft:choose.axew master @a ~ ~ ~ 1000 1

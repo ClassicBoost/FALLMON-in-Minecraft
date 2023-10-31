@@ -24,4 +24,4 @@ tellraw @p {"text": "Natural Armor: None", "color" : "#47FF47"}
 tellraw @p {"text": "HP: 24", "color" : "#47FF47"}
 tellraw @p {"text": "DMG: x1", "color" : "#47FF47"}
 tellraw @p {"text": "Knockback: x0.5", "color" : "#47FF47"}
-playsound minecraft:block.grass.place master @a ~ ~ ~ 1000 2
+playsound minecraft:choose.bulbasaur master @a ~ ~ ~ 1000 1
