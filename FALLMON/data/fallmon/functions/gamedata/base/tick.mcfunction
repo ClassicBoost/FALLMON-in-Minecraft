@@ -76,7 +76,7 @@ execute if score survivalMode stuffIguess matches 1.. run title @a[nbt={Selected
 execute if score survivalMode stuffIguess matches 1.. run scoreboard players remove @a[nbt={SelectedItem:{id:"minecraft:diamond_hoe"}}] radiation 50
 damage @r[nbt={SelectedItem:{id:"minecraft:diamond_hoe"}},scores={health=5..,radiation=1..}] 4 sweet_berry_bush
 effect give @a[nbt={SelectedItem:{id:"minecraft:diamond_hoe"}},scores={radiation=1..}] weakness 10 0 true
-clear @a[nbt={SelectedItem:{id:"minecraft:diamond_hoe"}},scores={radiation=1..}] diamond_hoe 1
+clear @a[nbt={SelectedItem:{id:"minecraft:diamond_hoe"}}] diamond_hoe 1
 
 kill @e[type=bat]
 
