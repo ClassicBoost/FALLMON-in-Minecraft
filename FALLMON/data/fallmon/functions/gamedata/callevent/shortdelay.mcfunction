@@ -16,7 +16,36 @@ scoreboard players add @a[nbt={Dimension:"minecraft:the_nether"}] tempRadiation 
 execute if score fallmonian stuffIguess matches 1.. run scoreboard players add @a[nbt={Dimension:"minecraft:the_nether"}] radiation 1
 execute if score fallmonian stuffIguess matches 1.. run scoreboard players add @a[nbt={Dimension:"minecraft:the_nether"}] tempRadiation 1
 
+title @a[scores={sprint=1..},nbt={Dimension:"minecraft:the_nether"}] actionbar "You can't breathe easily. Sprinting may not be the best."
+
+damage @r[scores={health=8..,armorlmao=..10},nbt={Dimension:"minecraft:the_end"}] 1 freeze
+
 time add 5
+
+effect give @a[scores={inspace=2}] poison 2 0 true
+title @a[scores={inspace=2}] actionbar "YOU ARE SUFFOCATING! GET DOWN!"
+
+effect give @a[nbt={Dimension:"minecraft:the_end",Inventory:[{Slot:103b,id:"minecraft:diamond_helmet"}]}] regeneration 5 0 true
+
+teleport @r[y=-20,dy=19] ~ ~90 ~
+
+scoreboard players set @r[y=128,dy=10] inspace 1
+scoreboard players set @r[y=-64,dy=191] inspace 0
+scoreboard players set @r[y=245,dy=10] inspace 1
+scoreboard players set @r[y=256,dy=10] inspace 2
+
+#execute if score endTemp stuffIguess matches 0 run title @a[nbt={Dimension:"minecraft:the_end"}] actionbar [{"translate": "YOU ARE FREEZING!", "color" : "#CCFFFF"}, {"text": " 0°K", "bold": true}]
+# execute if score endTemp stuffIguess matches 1 run title @a[nbt={Dimension:"minecraft:the_end"}] actionbar [{"translate": "YOU ARE FREEZING!", "color" : "#CCFFFF"}, {"text": " 31°K", "bold": true}]
+# execute if score endTemp stuffIguess matches 2 run title @a[nbt={Dimension:"minecraft:the_end"}] actionbar [{"translate": "YOU ARE FREEZING!", "color" : "#CCFFFF"}, {"text": " 72°K", "bold": true}]
+# execute if score endTemp stuffIguess matches 3 run title @a[nbt={Dimension:"minecraft:the_end"}] actionbar [{"translate": "YOU ARE FREEZING!", "color" : "#CCFFFF"}, {"text": " 43°K", "bold": true}]
+# execute if score endTemp stuffIguess matches 4 run title @a[nbt={Dimension:"minecraft:the_end"}] actionbar [{"translate": "YOU ARE FREEZING!", "color" : "#CCFFFF"}, {"text": " 64°K", "bold": true}]
+# execute if score endTemp stuffIguess matches 5 run title @a[nbt={Dimension:"minecraft:the_end"}] actionbar [{"translate": "YOU ARE FREEZING!", "color" : "#CCFFFF"}, {"text": " 15°K", "bold": true}]
+# execute if score endTemp stuffIguess matches 6 run title @a[nbt={Dimension:"minecraft:the_end"}] actionbar [{"translate": "YOU ARE FREEZING!", "color" : "#CCFFFF"}, {"text": " 86°K", "bold": true}]
+# execute if score endTemp stuffIguess matches 7 run title @a[nbt={Dimension:"minecraft:the_end"}] actionbar [{"translate": "YOU ARE FREEZING!", "color" : "#CCFFFF"}, {"text": " 37°K", "bold": true}]
+# execute if score endTemp stuffIguess matches 8 run title @a[nbt={Dimension:"minecraft:the_end"}] actionbar [{"translate": "YOU ARE FREEZING!", "color" : "#CCFFFF"}, {"text": " -1°K", "bold": true}]
+# execute if score endTemp stuffIguess matches 9 run title @a[nbt={Dimension:"minecraft:the_end"}] actionbar [{"translate": "YOU ARE FREEZING!", "color" : "#CCFFFF"}, {"text": " 17°K", "bold": true}]
+
+title @a[nbt={Dimension:"minecraft:the_end"}] actionbar [{"translate": "YOU ARE FREEZING!", "color" : "#CCFFFF"}, {"text": " NO OXYGEN!", "bold": true, "color": "#FF4953"}]
 
 # playsound block.note_block.bit block @a[gamemode=!creative,gamemode=!spectator,scores={health=..4}] ~ ~ ~ 100000000000000000000000000000 0.5
 

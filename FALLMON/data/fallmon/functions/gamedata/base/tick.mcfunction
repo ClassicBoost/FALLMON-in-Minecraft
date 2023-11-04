@@ -7,6 +7,9 @@ scoreboard players remove waterRad stuffIguess 1
 scoreboard players remove radiationTimer stuffIguess 1
 scoreboard players remove midDelay stuffIguess 1
 scoreboard players remove betaDelay stuffIguess 1
+scoreboard players add endTemp stuffIguess 1
+
+execute if score endTemp stuffIguess matches 9.. run scoreboard players set endTemp stuffIguess 0
 execute if score isolationMode stuffIguess matches 1.. run scoreboard players remove ambienceTimer stuffIguess 1
 
 execute if score heal stuffIguess matches ..0 run function fallmon:gamedata/callevent/heallmao
@@ -21,6 +24,14 @@ execute if score survivalMode stuffIguess matches ..0 if score isolationMode stu
 execute if score waterRad stuffIguess matches 5 run playsound fallmon.neardeath block @a[gamemode=!creative,gamemode=!spectator,scores={health=..4}] ~ ~ ~ 100000000000000000000000000000 0
 execute if score midDelay stuffIguess matches 5 run playsound fallmon.neardeath block @a[gamemode=!creative,gamemode=!spectator,scores={health=5..7}] ~ ~ ~ 100000000000000000000000000000 0
 execute if score midDelay stuffIguess matches ..0 run scoreboard players set midDelay stuffIguess 40
+
+scoreboard players remove @a[nbt={Dimension:"minecraft:the_end"}] oxygenAlt 1
+execute if score @r[nbt={Dimension:"minecraft:overworld"}] oxygenAlt matches ..20 run scoreboard players add @a[nbt={Dimension:"minecraft:overworld"}] oxygenAlt 1
+execute if score @r[nbt={Dimension:"minecraft:the_end"}] oxygenAlt matches ..-20 run scoreboard players set @a[nbt={Dimension:"minecraft:the_end"}] oxygenAlt 20
+execute unless entity @a[nbt={Inventory:[{Slot:103b,id:"minecraft:diamond_helmet"}]}] run damage @r[nbt={Dimension:"minecraft:the_end"},scores={oxygenAlt=..-19,health=2..}] 1 bad_respawn_point
+playsound entity.player.breath player @a[scores={oxygenAlt=..-19}] ~ ~ ~ 1 0.7 1
+execute unless entity @a[nbt={Inventory:[{Slot:103b,id:"minecraft:diamond_helmet"}]}] run effect give @a[nbt={Dimension:"minecraft:the_end"},scores={oxygenAlt=..-19,health=2..}] blindness 1 0 true
+# effect give @a[nbt={Dimension:"minecraft:the_end",Inventory:[{Slot:103b,id:"minecraft:diamond_helmet"}]}] regeneration 2 0 true
 
 title @a[scores={health=..0}] actionbar {"text": "OH MY GOD YOU SUCK! AUTO-UNINSTALLING!", "bold": true}
 execute if score fallmonian stuffIguess matches 1.. run gamemode spectator @a[scores={health=..0}]
@@ -41,15 +52,13 @@ execute if score betaDelay stuffIguess matches ..0 run scoreboard players set be
 
 function fallmon:gamedata/hurt
 
-
-
 scoreboard players remove shortestDelay stuffIguess 1
 
 function fallmon:gamedata/radiation
 function fallmon:species/updatespecies
 
 # damage @r[nbt={Dimension:"minecraft:the_nether"}] 99 bad_respawn_point
-damage @r[nbt={Dimension:"minecraft:the_end"}] 99 bad_respawn_point
+# damage @r[nbt={Dimension:"minecraft:the_end"}] 99 bad_respawn_point
 
 attribute @r generic.attack_speed base set 99
 
@@ -58,7 +67,6 @@ execute if score fallmonian stuffIguess matches ..0 run gamerule doMobLoot true
 
 # IGNORE THIS WARNING!!!!!
 execute if score fallmonian stuffIguess matches 1.. run gamerule pvp false
-execute if score fallmonian stuffIguess matches ..0 run gamerule pvp true
 
 damage @r[scores={oxygen=..-19,health=2..}] 1 generic
 effect give @a[scores={oxygen=..0,health=..1}] blindness 2 0 true
@@ -69,6 +77,11 @@ tellraw @a[nbt={SelectedItem:{id:"minecraft:milk_bucket"}}] "NUH UH, NO MILK FOR
 give @a[nbt={SelectedItem:{id:"minecraft:milk_bucket"}}] bucket
 clear @a[nbt={SelectedItem:{id:"minecraft:milk_bucket"}}] milk_bucket
 
+execute store result storage minecraft:fuckass coord.y int 1 run data get entity @s Pos[1]
+
+effect give @a[nbt={Dimension:"minecraft:the_end"}] slow_falling 1 0 true
+effect give @a[nbt={Dimension:"minecraft:the_end"}] jump_boost 1 2 true
+
 playsound minecraft:fallmon.radaway neutral @a[nbt={SelectedItem:{id:"minecraft:diamond_hoe"}},scores={radiation=1..}] ~ ~ ~ 100000000000 1 1
 execute if score survivalMode stuffIguess matches ..0 run title @a[nbt={SelectedItem:{id:"minecraft:diamond_hoe"}},scores={radiation=1..}] actionbar {"text": "Your radiation is reduced by 25", "color": "#47FF47"}
 execute if score survivalMode stuffIguess matches ..0 run scoreboard players remove @a[nbt={SelectedItem:{id:"minecraft:diamond_hoe"}}] radiation 25
@@ -77,6 +90,9 @@ execute if score survivalMode stuffIguess matches 1.. run scoreboard players rem
 damage @r[nbt={SelectedItem:{id:"minecraft:diamond_hoe"}},scores={health=5..,radiation=1..}] 4 sweet_berry_bush
 effect give @a[nbt={SelectedItem:{id:"minecraft:diamond_hoe"}},scores={radiation=1..}] weakness 10 0 true
 clear @a[nbt={SelectedItem:{id:"minecraft:diamond_hoe"}}] diamond_hoe 1
+
+damage @r[scores={sprint=1..,health=2..},nbt={Dimension:"minecraft:the_nether"}] 1 falling_block
+scoreboard players set @a[scores={sprint=1..}] sprint 0
 
 kill @e[type=bat]
 

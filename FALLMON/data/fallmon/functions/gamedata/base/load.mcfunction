@@ -19,6 +19,10 @@ scoreboard objectives add health health
 scoreboard objectives modify hunger displayname "World Hunger"
 scoreboard objectives setdisplay below_name health
 scoreboard objectives modify health displayname "HP"
+scoreboard objectives add oxygenAlt dummy
+scoreboard objectives add inspace dummy
+scoreboard objectives add armorlmao armor
+scoreboard objectives add sprint minecraft.custom:minecraft.sprint_one_cm
 
 # set up delays
 scoreboard players set heal stuffIguess 200
