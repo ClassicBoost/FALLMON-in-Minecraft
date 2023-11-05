@@ -36,6 +36,11 @@ execute unless entity @a[nbt={Inventory:[{Slot:103b,id:"minecraft:diamond_helmet
 title @a[scores={health=..0}] actionbar {"text": "OH MY GOD YOU SUCK! AUTO-UNINSTALLING!", "bold": true}
 execute if score fallmonian stuffIguess matches 1.. run gamemode spectator @a[scores={health=..0}]
 
+scoreboard players set @a[y=128 , dy=20] inspace 1
+scoreboard players set @a[y=-64 , dy=191] inspace 0
+scoreboard players set @a[y=235 , dy=20] inspace 1
+scoreboard players set @a[y=256 , dy=100] inspace 2
+
 effect give @a[scores={health=..7}] slowness 1 0 true
 effect give @a[scores={health=..5}] slowness 1 1 true
 effect give @a[scores={health=..5}] weakness 1 1 true
@@ -48,14 +53,14 @@ execute if score timeSinceWorld stuffIguess matches ..10 run scoreboard players 
 execute if score timeSinceWorld stuffIguess matches ..10 run scoreboard players set isolationMode stuffIguess 0
 
 execute if score betaDelay stuffIguess matches ..0 run tellraw @a {"text": "Version: Beta 1.2", "color" : "#47FF47", "italic": true}
-execute if score betaDelay stuffIguess matches ..0 run scoreboard players set betaDelay stuffIguess 200000
+execute if score betaDelay stuffIguess matches ..0 run scoreboard players set betaDelay stuffIguess 30000
 
 function fallmon:gamedata/hurt
 
 scoreboard players remove shortestDelay stuffIguess 1
 
 function fallmon:gamedata/radiation
-function fallmon:species/updatespecies
+function fallmon:species/tick
 
 # damage @r[nbt={Dimension:"minecraft:the_nether"}] 99 bad_respawn_point
 # damage @r[nbt={Dimension:"minecraft:the_end"}] 99 bad_respawn_point

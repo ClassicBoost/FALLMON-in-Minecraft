@@ -29,11 +29,6 @@ effect give @a[nbt={Dimension:"minecraft:the_end",Inventory:[{Slot:103b,id:"mine
 
 teleport @r[y=-20,dy=19] ~ ~90 ~
 
-scoreboard players set @r[y=128,dy=10] inspace 1
-scoreboard players set @r[y=-64,dy=191] inspace 0
-scoreboard players set @r[y=245,dy=10] inspace 1
-scoreboard players set @r[y=256,dy=10] inspace 2
-
 #execute if score endTemp stuffIguess matches 0 run title @a[nbt={Dimension:"minecraft:the_end"}] actionbar [{"translate": "YOU ARE FREEZING!", "color" : "#CCFFFF"}, {"text": " 0°K", "bold": true}]
 # execute if score endTemp stuffIguess matches 1 run title @a[nbt={Dimension:"minecraft:the_end"}] actionbar [{"translate": "YOU ARE FREEZING!", "color" : "#CCFFFF"}, {"text": " 31°K", "bold": true}]
 # execute if score endTemp stuffIguess matches 2 run title @a[nbt={Dimension:"minecraft:the_end"}] actionbar [{"translate": "YOU ARE FREEZING!", "color" : "#CCFFFF"}, {"text": " 72°K", "bold": true}]

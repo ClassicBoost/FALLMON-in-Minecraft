@@ -14,7 +14,7 @@ team add default ""
 team join default @a
 playsound block.note_block.pling master @a ~ ~ ~ 1000 1
 
-function fallmon:species/actuallyreload
+function fallmon:species/reload
 
 # done
 playsound block.note_block.pling master @a ~ ~ ~ 1000 2
