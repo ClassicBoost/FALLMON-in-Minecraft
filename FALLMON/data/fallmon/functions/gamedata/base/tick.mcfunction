@@ -88,12 +88,12 @@ effect give @a[nbt={Dimension:"minecraft:the_end"}] slow_falling 1 0 true
 effect give @a[nbt={Dimension:"minecraft:the_end"}] jump_boost 1 2 true
 
 playsound minecraft:fallmon.radaway neutral @a[nbt={SelectedItem:{id:"minecraft:diamond_hoe"}},scores={radiation=1..}] ~ ~ ~ 100000000000 1 1
+damage @r[nbt={SelectedItem:{id:"minecraft:diamond_hoe"}},scores={health=5..,radiation=1..}] 4 out_of_world
+effect give @a[nbt={SelectedItem:{id:"minecraft:diamond_hoe"}},scores={radiation=1..}] weakness 10 0 true
 execute if score survivalMode stuffIguess matches ..0 run title @a[nbt={SelectedItem:{id:"minecraft:diamond_hoe"}},scores={radiation=1..}] actionbar {"text": "Your radiation is reduced by 25", "color": "#47FF47"}
 execute if score survivalMode stuffIguess matches ..0 run scoreboard players remove @a[nbt={SelectedItem:{id:"minecraft:diamond_hoe"}}] radiation 25
 execute if score survivalMode stuffIguess matches 1.. run title @a[nbt={SelectedItem:{id:"minecraft:diamond_hoe"}},scores={radiation=1..}] actionbar {"text": "Your radiation is reduced by 50", "color": "#47FF47"}
 execute if score survivalMode stuffIguess matches 1.. run scoreboard players remove @a[nbt={SelectedItem:{id:"minecraft:diamond_hoe"}}] radiation 50
-damage @r[nbt={SelectedItem:{id:"minecraft:diamond_hoe"}},scores={health=5..,radiation=1..}] 4 out_of_world
-effect give @a[nbt={SelectedItem:{id:"minecraft:diamond_hoe"}},scores={radiation=1..}] weakness 10 0 true
 clear @a[nbt={SelectedItem:{id:"minecraft:diamond_hoe"}}] diamond_hoe 1
 
 damage @r[scores={sprint=1..,health=2..},nbt={Dimension:"minecraft:the_nether"}] 1 out_of_world
