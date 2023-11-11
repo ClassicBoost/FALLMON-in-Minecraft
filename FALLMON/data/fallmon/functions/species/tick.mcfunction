@@ -1,7 +1,7 @@
-execute as @a[team=!] run effect clear @a[team=!] haste
-execute as @a[team=!] run effect clear @a[team=!] water_breathing
-execute as @a[team=!] run effect clear @a[team=!] jump_boost
-execute as @a[team=!] run effect clear @a[team=!] fire_resistance
+# execute as @a[team=!] run effect clear @a[team=!] haste
+# execute as @a[team=!] run effect clear @a[team=!] water_breathing
+# execute as @a[team=!] run effect clear @a[team=!] jump_boost
+# execute as @a[team=!] run effect clear @a[team=!] fire_resistance
 
 execute as @a[team=!] run attribute @s[team=!] generic.movement_speed base set 0.1
 execute as @a[team=!] run attribute @s[team=!] generic.armor base set 0
