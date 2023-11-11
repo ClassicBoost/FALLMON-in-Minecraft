@@ -18,7 +18,7 @@ execute if score fallmonian stuffIguess matches 1.. run scoreboard players add @
 
 title @a[scores={sprint=1..},nbt={Dimension:"minecraft:the_nether"}] actionbar "You can't breathe easily. Sprinting may not be the best."
 
-damage @r[scores={health=8..,armorlmao=..10},nbt={Dimension:"minecraft:the_end"}] 1 freeze
+damage @r[scores={health=8..,armorlmao=..10},nbt={Dimension:"minecraft:the_end"}] 1 out_of_world
 
 time add 5
 

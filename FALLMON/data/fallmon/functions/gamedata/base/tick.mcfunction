@@ -28,7 +28,7 @@ execute if score midDelay stuffIguess matches ..0 run scoreboard players set mid
 scoreboard players remove @a[nbt={Dimension:"minecraft:the_end"}] oxygenAlt 1
 execute if score @r[nbt={Dimension:"minecraft:overworld"}] oxygenAlt matches ..20 run scoreboard players add @a[nbt={Dimension:"minecraft:overworld"}] oxygenAlt 1
 execute if score @r[nbt={Dimension:"minecraft:the_end"}] oxygenAlt matches ..-20 run scoreboard players set @a[nbt={Dimension:"minecraft:the_end"}] oxygenAlt 20
-execute unless entity @a[nbt={Inventory:[{Slot:103b,id:"minecraft:diamond_helmet"}]}] run damage @r[nbt={Dimension:"minecraft:the_end"},scores={oxygenAlt=..-19,health=2..}] 1 bad_respawn_point
+execute unless entity @a[nbt={Inventory:[{Slot:103b,id:"minecraft:diamond_helmet"}]}] run damage @r[nbt={Dimension:"minecraft:the_end"},scores={oxygenAlt=..-19,health=2..}] 1 out_of_world
 playsound entity.player.breath player @a[scores={oxygenAlt=..-19}] ~ ~ ~ 1 0.7 1
 execute unless entity @a[nbt={Inventory:[{Slot:103b,id:"minecraft:diamond_helmet"}]}] run effect give @a[nbt={Dimension:"minecraft:the_end"},scores={oxygenAlt=..-19,health=2..}] blindness 1 0 true
 # effect give @a[nbt={Dimension:"minecraft:the_end",Inventory:[{Slot:103b,id:"minecraft:diamond_helmet"}]}] regeneration 2 0 true
@@ -73,7 +73,7 @@ execute if score fallmonian stuffIguess matches ..0 run gamerule doMobLoot true
 # IGNORE THIS WARNING!!!!!
 execute if score fallmonian stuffIguess matches 1.. run gamerule pvp false
 
-damage @r[scores={oxygen=..-19,health=2..}] 1 generic
+damage @r[scores={oxygen=..-19,health=2..}] 1 out_of_world
 effect give @a[scores={oxygen=..0,health=..1}] blindness 2 0 true
 playsound fallmon.breathe player @a[scores={oxygen=1..10}] ~ ~ ~ 1 1 1
 
@@ -92,11 +92,11 @@ execute if score survivalMode stuffIguess matches ..0 run title @a[nbt={Selected
 execute if score survivalMode stuffIguess matches ..0 run scoreboard players remove @a[nbt={SelectedItem:{id:"minecraft:diamond_hoe"}}] radiation 25
 execute if score survivalMode stuffIguess matches 1.. run title @a[nbt={SelectedItem:{id:"minecraft:diamond_hoe"}},scores={radiation=1..}] actionbar {"text": "Your radiation is reduced by 50", "color": "#47FF47"}
 execute if score survivalMode stuffIguess matches 1.. run scoreboard players remove @a[nbt={SelectedItem:{id:"minecraft:diamond_hoe"}}] radiation 50
-damage @r[nbt={SelectedItem:{id:"minecraft:diamond_hoe"}},scores={health=5..,radiation=1..}] 4 sweet_berry_bush
+damage @r[nbt={SelectedItem:{id:"minecraft:diamond_hoe"}},scores={health=5..,radiation=1..}] 4 out_of_world
 effect give @a[nbt={SelectedItem:{id:"minecraft:diamond_hoe"}},scores={radiation=1..}] weakness 10 0 true
 clear @a[nbt={SelectedItem:{id:"minecraft:diamond_hoe"}}] diamond_hoe 1
 
-damage @r[scores={sprint=1..,health=2..},nbt={Dimension:"minecraft:the_nether"}] 1 falling_block
+damage @r[scores={sprint=1..,health=2..},nbt={Dimension:"minecraft:the_nether"}] 1 out_of_world
 scoreboard players set @a[scores={sprint=1..}] sprint 0
 
 kill @e[type=bat]
