@@ -1,5 +1,5 @@
 # FALLMON Data Pack
- 
+![](https://cdn.discordapp.com/attachments/930662315706163241/1173348832352948264/logo.png?ex=6563a141&is=65512c41&hm=170d60ecfeac95012b1e01b19fdde8adda2687f705924d550ffa9eb8f9bb5187&)<br>
 The data pack to Minecraft. Adds Fallout and Pokemon features.
 
 This datapack is capatible with version 1.20.2 and later. May not work for older versions.
@@ -18,13 +18,17 @@ This datapack is capatible with version 1.20.2 and later. May not work for older
 ### [Wiki Page](https://github.com/ClassicBoost/FALLMON-Data-Pack/wiki)<br>
 -----------------------------------------------
 # Credits
-* [Classic1926](https://www.youtube.com/channel/UCKcqlPIGcsoiGl9qsasAJhw) (me!):
+* [Classic1926](https://twitter.com/classic1926) (me!):
   * Made this data pack and FALLMON itself,
   * Gamedata and backend code
   * Wiki page
-* [Schmeckeldorf](https://www.youtube.com/@Schmeckeldorf.):
+* [Schmeckeldorf](https://twitter.com/Schmeckeld0rf):
   * Coder
   * Made the Pokémon data
+  * Tester
+  * Certified Joey
+* [DS Dude](https://twitter.com/DSDude3)
+  * Tester
 <br>
 Nintendo - Pokémon<br>
 Bethesda / Interplay Entertainment - Fallout<br>
