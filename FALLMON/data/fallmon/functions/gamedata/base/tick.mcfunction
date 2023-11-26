@@ -8,6 +8,10 @@ scoreboard players remove radiationTimer stuffIguess 1
 scoreboard players remove midDelay stuffIguess 1
 scoreboard players remove betaDelay stuffIguess 1
 scoreboard players add endTemp stuffIguess 1
+scoreboard players remove huh secrets 1
+
+execute if score huh secrets matches ..0 if score startfr secrets matches 1 run tellraw @a ["",{"text":"Geckossssssss","color":"gold"},{"text":" joined the game","color":"yellow"}]
+execute if score huh secrets matches ..0 run scoreboard players set huh secrets 10000000
 
 execute if score endTemp stuffIguess matches 9.. run scoreboard players set endTemp stuffIguess 0
 execute if score isolationMode stuffIguess matches 1.. run scoreboard players remove ambienceTimer stuffIguess 1
@@ -123,4 +127,5 @@ execute if score isolationMode stuffIguess matches 1.. run tp @e[type=witch] 0 5
 execute if score isolationMode stuffIguess matches 1.. run tp @e[type=evoker] 0 500 0
 # isolation mode (true)
 # a fucking mess but minecraft lacks a group type for all mobs
+# you might be asking, "why not use doMobSpawning?" because of testing rooms and I don't want mobs to casually spawn when I have isolation mode off
 execute if score isolationMode stuffIguess matches 2 run tp @e[type=!player,type=!item_frame,type=!arrow,type=!armor_stand,type=!area_effect_cloud,type=!egg,type=!item,type=!item_display,type=!tnt,type=!tnt_minecart,type=!ender_pearl,type=!glow_item_frame,type=!experience_bottle,type=!eye_of_ender,type=!snowball,type=!minecart,type=!chest_minecart,type=!boat,type=!chest_boat,type=!fireball,type=!falling_block,type=!painting] 0 500 0

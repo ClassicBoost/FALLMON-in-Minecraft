@@ -14,6 +14,7 @@ execute as @a[nbt={HurtTime:9s},team=machop] at @s run playsound pokemon.machop 
 execute as @a[nbt={HurtTime:9s},team=cubone] at @s run playsound hurt.cubone player @a ~ ~ ~ 1 1
 execute as @a[nbt={HurtTime:9s},team=eevee] at @s run playsound hurt.eevee player @a ~ ~ ~ 1 1
 
+execute as @a[nbt={HurtTime:9s},scores={health=..0}] at @s run tellraw @a {"text":"☠ ","color":"red","extra":[{"selector":"@a[nbt={HurtTime:9s},scores={health=..0}]"},{"text":" has fainted!","color":"#B7B7B7"}]}
 execute as @a[nbt={HurtTime:9s},scores={health=..0}] at @s run playsound player.death player @a ~ ~ ~ 100000000 1
 
 playsound hurt.drown player @a[scores={oxygen=..-19}] ~ ~ ~ 100000000 1

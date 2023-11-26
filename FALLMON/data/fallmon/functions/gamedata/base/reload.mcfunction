@@ -19,6 +19,10 @@ scoreboard objectives add oxygenAlt dummy
 scoreboard objectives add inspace dummy
 scoreboard objectives add armorlmao armor
 scoreboard objectives add sprint minecraft.custom:minecraft.sprint_one_cm
+scoreboard objectives add damage custom:damage_taken
+scoreboard objectives add secrets dummy
+
+scoreboard players set startfr secrets 1
 
 # set up delays
 scoreboard players set heal stuffIguess 200
@@ -27,6 +31,7 @@ scoreboard players set ambienceTimer stuffIguess 500
 
 scoreboard objectives modify stuffIguess displayname "Debug Info"
 
+# radiation display
 bossbar add 1 "You are perfectly fine!"
 bossbar set 1 color white
 
@@ -65,8 +70,7 @@ bossbar set 7 value 1
 bossbar set 7 color red
 bossbar set 7 name {"text": "You are decaying", "color": "#871517", "bold": true}
 
-scoreboard objectives add damage custom:damage_taken
-
+# update game rules
 gamerule doDaylightCycle false
 gamerule naturalRegeneration false
 gamerule commandBlockOutput false
@@ -75,3 +79,4 @@ gamerule drowningDamage false
 gamerule doTraderSpawning false
 gamerule doInsomnia false
 gamerule maxEntityCramming 0
+gamerule showDeathMessages false

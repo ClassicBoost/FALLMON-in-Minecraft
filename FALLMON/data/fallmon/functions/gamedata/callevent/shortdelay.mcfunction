@@ -29,17 +29,6 @@ effect give @a[nbt={Dimension:"minecraft:the_end",Inventory:[{Slot:103b,id:"mine
 
 teleport @r[y=-20,dy=19] ~ ~90 ~
 
-#execute if score endTemp stuffIguess matches 0 run title @a[nbt={Dimension:"minecraft:the_end"}] actionbar [{"translate": "YOU ARE FREEZING!", "color" : "#CCFFFF"}, {"text": " 0°K", "bold": true}]
-# execute if score endTemp stuffIguess matches 1 run title @a[nbt={Dimension:"minecraft:the_end"}] actionbar [{"translate": "YOU ARE FREEZING!", "color" : "#CCFFFF"}, {"text": " 31°K", "bold": true}]
-# execute if score endTemp stuffIguess matches 2 run title @a[nbt={Dimension:"minecraft:the_end"}] actionbar [{"translate": "YOU ARE FREEZING!", "color" : "#CCFFFF"}, {"text": " 72°K", "bold": true}]
-# execute if score endTemp stuffIguess matches 3 run title @a[nbt={Dimension:"minecraft:the_end"}] actionbar [{"translate": "YOU ARE FREEZING!", "color" : "#CCFFFF"}, {"text": " 43°K", "bold": true}]
-# execute if score endTemp stuffIguess matches 4 run title @a[nbt={Dimension:"minecraft:the_end"}] actionbar [{"translate": "YOU ARE FREEZING!", "color" : "#CCFFFF"}, {"text": " 64°K", "bold": true}]
-# execute if score endTemp stuffIguess matches 5 run title @a[nbt={Dimension:"minecraft:the_end"}] actionbar [{"translate": "YOU ARE FREEZING!", "color" : "#CCFFFF"}, {"text": " 15°K", "bold": true}]
-# execute if score endTemp stuffIguess matches 6 run title @a[nbt={Dimension:"minecraft:the_end"}] actionbar [{"translate": "YOU ARE FREEZING!", "color" : "#CCFFFF"}, {"text": " 86°K", "bold": true}]
-# execute if score endTemp stuffIguess matches 7 run title @a[nbt={Dimension:"minecraft:the_end"}] actionbar [{"translate": "YOU ARE FREEZING!", "color" : "#CCFFFF"}, {"text": " 37°K", "bold": true}]
-# execute if score endTemp stuffIguess matches 8 run title @a[nbt={Dimension:"minecraft:the_end"}] actionbar [{"translate": "YOU ARE FREEZING!", "color" : "#CCFFFF"}, {"text": " -1°K", "bold": true}]
-# execute if score endTemp stuffIguess matches 9 run title @a[nbt={Dimension:"minecraft:the_end"}] actionbar [{"translate": "YOU ARE FREEZING!", "color" : "#CCFFFF"}, {"text": " 17°K", "bold": true}]
-
 title @a[nbt={Dimension:"minecraft:the_end"}] actionbar [{"translate": "YOU ARE FREEZING!", "color" : "#CCFFFF"}, {"text": " NO OXYGEN!", "bold": true, "color": "#FF4953"}]
 
 # playsound block.note_block.bit block @a[gamemode=!creative,gamemode=!spectator,scores={health=..4}] ~ ~ ~ 100000000000000000000000000000 0.5
