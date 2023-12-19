@@ -1,1 +1,0 @@
-playsound music_disc.11 record @s ~ ~ ~ 1 1 1

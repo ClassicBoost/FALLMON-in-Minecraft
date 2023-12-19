@@ -1,1 +1,0 @@
-playsound music_disc.chirp record @s ~ ~ ~ 1 1 1

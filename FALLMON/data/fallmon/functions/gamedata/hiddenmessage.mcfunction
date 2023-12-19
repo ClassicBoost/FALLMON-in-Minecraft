@@ -1,1 +1,0 @@
-execute at @s run tellraw @p {"text": "Shut the fuck up", "color" : "0xFFFFFF"}
