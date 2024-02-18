@@ -19,10 +19,13 @@ scoreboard objectives add type dummy
 
 scoreboard objectives add updates dummy "- Debug Info -"
 
+scoreboard objectives add tempRad dummy
+
 scoreboard players set hpHeal updates 200
 scoreboard players set survivalTime updates 120
 
 scoreboard players add @a radiation 0
+scoreboard players add @a tempRad 0
 
 # radiation display
 bossbar add 1 "You are perfectly fine!"
