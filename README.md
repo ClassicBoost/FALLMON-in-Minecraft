@@ -1,5 +1,5 @@
 ## Older Versions
-[1.20.2](https://github.com/ClassicBoost/FALLMON-in-Minecraft/tree/1.20.2-Legacy)
+### [1.20.2](https://github.com/ClassicBoost/FALLMON-in-Minecraft/tree/1.20.2-Legacy)
 # FALLMON Data Pack
 ![](https://cdn.discordapp.com/attachments/1175476820322291774/1208616884363075605/title.png?ex=65e3ef30&is=65d17a30&hm=439cb4ae19baa9b592e280d9c38f09ef23a4dcae6c9628fe5c1747430a85a1be&)<br>
 The data pack to Minecraft. Adds Fallout and Pokemon features.
