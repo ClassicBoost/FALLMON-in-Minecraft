@@ -1,1 +1,0 @@
-playsound music_disc.far record @s ~ ~ ~ 1 1 1

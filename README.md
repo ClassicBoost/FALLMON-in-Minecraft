@@ -1,13 +1,13 @@
 # FALLMON Data Pack
-![](https://cdn.discordapp.com/attachments/930662315706163241/1173348832352948264/logo.png?ex=6563a141&is=65512c41&hm=170d60ecfeac95012b1e01b19fdde8adda2687f705924d550ffa9eb8f9bb5187&)<br>
+![](https://cdn.discordapp.com/attachments/1175476820322291774/1208616884363075605/title.png?ex=65e3ef30&is=65d17a30&hm=439cb4ae19baa9b592e280d9c38f09ef23a4dcae6c9628fe5c1747430a85a1be&)<br>
 The data pack to Minecraft. Adds Fallout and Pokemon features.
 
-This datapack is capatible with version 1.20.2 and later. May not work for older versions.
+This datapack is capatible with version 1.20.4 and later. May not work for older versions.
 
-[**Resource Pack**](https://drive.google.com/file/d/1oFSNdoeNusZK8g1Sl5QYOq_vnhQVzglq/view?usp=sharing)
+**v2 Resource Pack coming soon**
 
 # Features
-* 38 available Pokémon
+* 5 available Pokémon (More to come)
    * They don't have moves yet, only modifiers.
 * Radiation (WIP)
 * Some game changes
@@ -30,40 +30,5 @@ This datapack is capatible with version 1.20.2 and later. May not work for older
 * [DS Dude](https://twitter.com/DSDude3)
   * Tester
 <br>
-Nintendo - Pokémon<br>
-Bethesda / Interplay Entertainment - Fallout<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-keep scrolling I dare you
+* Nintendo - Pokémon
+* Bethesda / Interplay Entertainment - Fallout

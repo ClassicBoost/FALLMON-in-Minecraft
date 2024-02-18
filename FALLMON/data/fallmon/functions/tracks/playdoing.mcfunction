@@ -1,1 +1,0 @@
-playsound music_disc.cat record @s ~ ~ ~ 1 1 1
