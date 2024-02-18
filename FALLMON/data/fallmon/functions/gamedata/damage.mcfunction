@@ -1,0 +1,2 @@
+# It's possible that if multiple players die at the same time it would show multiple people
+execute as @a[nbt={HurtTime:9s},scores={hp=..0}] at @s run tellraw @a {"text":"☠ ","color":"red","extra":[{"selector":"@a[nbt={HurtTime:9s},scores={hp=..0}]"},{"text":" has fainted!","color":"#B7B7B7"}]}

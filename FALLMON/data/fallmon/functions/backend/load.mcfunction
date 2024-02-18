@@ -3,4 +3,4 @@ function fallmon:backend/tick
 function fallmon:backend/reload
 
 # now load the rest
-function fallmon:species/load
+function fallmon:gamedata/species/load

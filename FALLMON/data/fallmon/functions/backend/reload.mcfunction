@@ -5,6 +5,7 @@ gamerule fallDamage false
 gamerule mobGriefing false
 gamerule waterSourceConversion false
 gamerule naturalRegeneration false
+gamerule showDeathMessages false
 
 scoreboard objectives add radiation dummy "Radiation Level"
 scoreboard objectives setdisplay list radiation
