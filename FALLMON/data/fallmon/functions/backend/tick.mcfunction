@@ -1,14 +1,7 @@
 function fallmon:gamedata/speciestick
-function fallmon:gamedata/radiation
+function fallmon:gamedata/radiation/radiation
 function fallmon:gamedata/general
 function fallmon:gamedata/damage
-
-title @a[gamemode=creative] actionbar {"text": "- In Creative Mode, Some functions are disabled -"}
-
-# but diamonds are op
-clear @a netherite_ingot
-clear @a netherite_scrap
-clear @a netherite_block
 
 scoreboard players remove hpHeal updates 1
 scoreboard players remove survivalTime updates 1
@@ -23,13 +16,4 @@ execute if score second updates matches ..0 run function fallmon:updates/second
 execute if score fourtick updates matches ..0 run function fallmon:updates/fourtick
 execute if score survivalTime updates matches ..0 run function fallmon:updates/survival
 
-kill @e[type=experience_orb]
-kill @e[type=bat]
-
-damage @r[scores={hp=2..,oxygen=..-19}] 1 generic
-effect give @a[scores={hp=..1,oxygen=..0}] blindness 2 0 true
-
-xp set @a[scores={hp=..0}] 0 points
-xp set @a[scores={hp=..0}] 0 levels
-
-time add 1
+function fallmon:updates/consistent

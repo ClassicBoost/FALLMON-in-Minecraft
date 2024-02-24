@@ -8,10 +8,13 @@ gamerule naturalRegeneration false
 gamerule showDeathMessages false
 
 scoreboard objectives add radiation dummy "Radiation Level"
-scoreboard objectives setdisplay list radiation
+# scoreboard objectives setdisplay list radiation
 
 scoreboard objectives add hp health "Life Energy"
 scoreboard objectives setdisplay below_name hp
+
+scoreboard objectives add lvl level "Survival Level"
+scoreboard objectives setdisplay list lvl
 
 scoreboard objectives add oxygen air
 
@@ -53,3 +56,7 @@ bossbar set 6 name {"text": "Your skin is decaying", "color": "#FF291E", "bold":
 bossbar add 7 "You are decaying"
 bossbar set 7 color white
 bossbar set 7 name {"text": "You are decaying", "color": "#871517", "bold": true}
+
+bossbar add 8 "creative"
+bossbar set 8 color white
+bossbar set 8 name {"text": "- In Creative Mode, Some functions are disabled -", "color": "#FFFFFF", "bold": true}
