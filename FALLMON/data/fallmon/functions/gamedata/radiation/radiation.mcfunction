@@ -35,12 +35,12 @@ effect give @a[gamemode=!creative,gamemode=!spectator,scores={radiation=1000..}]
 effect give @a[gamemode=!creative,gamemode=!spectator,scores={radiation=1000..}] hunger 1 5 true
 
 # Fix radiation level
-effect give @a[gamemode=!creative,gamemode=!spectator,scores={radiation=1000..}] wither 2 0 true
+effect give @a[gamemode=!creative,gamemode=!spectator,scores={radiation=1050..}] wither 2 0 true
 
 scoreboard players set @a[scores={hp=..0,radiation=999..}] radiation 750
 
 # Resets
-scoreboard players set @a[scores={radiation=1001..}] radiation 1000
+scoreboard players set @a[scores={radiation=1051..}] radiation 1050
 scoreboard players set @a[scores={radiation=..-1}] radiation 0
 
 execute if entity @a[gamemode=creative] run bossbar set 8 players @a[gamemode=creative]
