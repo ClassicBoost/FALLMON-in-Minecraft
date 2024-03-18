@@ -1,0 +1,9 @@
+name: Feature Request
+description: I will not add guns to the data pack or make any back ports to older versions of Minecraft.
+labels: [enhancement]
+body:
+  - type: textarea
+    attributes:
+      label: Which feature do you want to add to the data pack? (This could be like new species or something)
+    validations:
+      required: true
