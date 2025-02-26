@@ -13,7 +13,6 @@ title @a[team=] actionbar {"text": "Choose a Pokemon (/function fallmon:starter)
 
 # types
 #  | 0 - Water | 1 - None/Pure Normal | 2 - Fire | 3 - Grass | 4 - Eletric | 5 - Flying | 6 - Poison
-scoreboard players set @a[team=!] type 1
 scoreboard players set @a[team=] type -1
 
 effect give @a[scores={type=2}] fire_resistance 5 0 true
@@ -53,6 +52,8 @@ execute as @a[team=rattata] run attribute @s[team=rattata] generic.movement_spee
 execute as @a[team=rattata] run attribute @s[team=rattata] generic.max_health base set 22
 effect give @a[team=rattata] jump_boost 2 1 true
 
+scoreboard players set @a[team=rattata] type 1
+
 #psyduck
 execute as @a[team=psyduck] run attribute @s[team=psyduck] generic.max_health base set 22
 effect give @a[team=psyduck] water_breathing 2 1 true
@@ -63,10 +64,12 @@ scoreboard players set @a[team=psyduck] type 0
 execute as @a[team=cubone] run attribute @s[team=cubone] generic.movement_speed base set 0.12
 execute as @a[team=cubone] run attribute @s[team=cubone] generic.armor base set 4
 execute as @a[team=cubone] run attribute @s[team=cubone] generic.attack_knockback base set 0.2
+scoreboard players set @a[team=cubone] type 1
 
 # eevee
 # erm... Eevee doesn't really have any modifiers.
 # YOUR AD HERE FUCKER
+scoreboard players set @a[team=eevee] type 1
 
 # chikorita
 execute as @a[team=chikorita] run attribute @s[team=chikorita] generic.movement_speed base set 0.11
@@ -123,6 +126,8 @@ execute as @a[team=phanpy] run attribute @s[team=phanpy] generic.armor base set 
 execute as @a[team=phanpy] run attribute @s[team=phanpy] generic.max_health base set 22
 execute as @a[team=phanpy] run attribute @s[team=phanpy] generic.attack_damage base set 5
 
+scoreboard players set @a[team=phanpy] type 1
+
 # turtwig
 execute as @a[team=turtwig] run attribute @s[team=turtwig] generic.movement_speed base set 0.11
 execute as @a[team=turtwig] run attribute @s[team=turtwig] generic.armor base set 2
@@ -162,6 +167,8 @@ execute as @a[team=riolu] run attribute @s[team=riolu] generic.attack_knockback 
 effect give @a[team=riolu] jump_boost 2 0 true
 effect give @a[team=riolu] haste 2 0 true
 
+scoreboard players set @a[team=riolu] type 1
+
 # wooper
 execute as @a[team=wooper] run attribute @s[team=wooper] generic.movement_speed base set 0.13
 execute as @a[team=wooper] run attribute @s[team=wooper] generic.max_health base set 22
@@ -177,6 +184,8 @@ execute as @a[team=azurill] run attribute @s[team=azurill] generic.movement_spee
 execute as @a[team=azurill] run attribute @s[team=azurill] generic.armor base set 5
 execute as @a[team=azurill] run attribute @s[team=azurill] generic.attack_damage base set 1
 
+scoreboard players set @a[team=azurill] type 1
+
 # growlithe
 # dog
 execute as @a[team=growlithe] run attribute @s[team=growlithe] generic.movement_speed base set 0.12
@@ -191,11 +200,13 @@ execute as @a[team=teddiursa] run attribute @s[team=teddiursa] generic.movement_
 execute as @a[team=teddiursa] run attribute @s[team=teddiursa] generic.armor base set 1
 execute as @a[team=teddiursa] run attribute @s[team=teddiursa] generic.max_health base set 22
 execute as @a[team=teddiursa] run attribute @s[team=teddiursa] generic.attack_damage base set 4
+scoreboard players set @a[team=teddiursa] type 1
 
 # buneary
 # bunny sex
 execute as @a[team=buneary] run attribute @s[team=buneary] generic.movement_speed base set 0.12
 execute as @a[team=buneary] run attribute @s[team=buneary] generic.attack_damage base set 3
+scoreboard players set @a[team=buneary] type 1
 
 # togepi
 # should this even be allowed!?!?!?!
@@ -203,6 +214,7 @@ execute as @a[team=togepi] run attribute @s[team=togepi] generic.movement_speed 
 execute as @a[team=togepi] run attribute @s[team=togepi] generic.armor base set 5
 execute as @a[team=togepi] run attribute @s[team=togepi] generic.max_health base set 18
 execute as @a[team=togepi] run attribute @s[team=togepi] generic.attack_damage base set 1
+scoreboard players set @a[team=togepi] type 1
 
 # mareep
 # the player turns into a sheep
@@ -254,6 +266,7 @@ scoreboard players set @a[team=oshawott] type 0
 execute as @a[team=axew] run attribute @s[team=axew] generic.movement_speed base set 0.085
 execute as @a[team=axew] run attribute @s[team=axew] generic.max_health base set 24
 execute as @a[team=axew] run attribute @s[team=axew] generic.attack_damage base set 4
+scoreboard players set @a[team=axew] type 1
 
 # chespin
 execute as @a[team=chespin] run attribute @s[team=chespin] generic.movement_speed base set 0.12
