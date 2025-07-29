@@ -3,11 +3,11 @@
 team join snivy @p
 
 # data
-attribute @p generic.movement_speed base set 0.125
-attribute @p generic.armor base set -4
-attribute @p generic.max_health base set 16
-attribute @p generic.attack_damage base set 1.5
-attribute @p generic.attack_knockback base set 0.2
+attribute @p minecraft:movement_speed base set 0.125
+attribute @p minecraft:armor base set -4
+attribute @p minecraft:max_health base set 16
+attribute @p minecraft:attack_damage base set 1.5
+attribute @p minecraft:attack_knockback base set 0.2
 
 effect clear @p fire_resistance
 effect give @p jump_boost 2 0 true

@@ -5,11 +5,11 @@ team join tepig @p
 
 # data
 # default stats
-attribute @p generic.movement_speed base set 0.13
-attribute @p generic.armor base set 0
-attribute @p generic.max_health base set 14
-attribute @p generic.attack_damage base set 6
-attribute @p generic.attack_knockback base set 0
+attribute @p minecraft:movement_speed base set 0.13
+attribute @p minecraft:armor base set 0
+attribute @p minecraft:max_health base set 14
+attribute @p minecraft:attack_damage base set 6
+attribute @p minecraft:attack_knockback base set 0
 
 effect give @p fire_resistance 2 1 true
 effect clear @p jump_boost

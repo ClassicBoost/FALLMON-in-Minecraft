@@ -3,11 +3,11 @@
 team join pikachu @p
 
 # data
-attribute @p generic.movement_speed base set 0.15
-attribute @p generic.armor base set 0
-attribute @p generic.max_health base set 18
-attribute @p generic.attack_damage base set 2.15
-attribute @p generic.attack_knockback base set 0
+attribute @p minecraft:movement_speed base set 0.15
+attribute @p minecraft:armor base set 0
+attribute @p minecraft:max_health base set 18
+attribute @p minecraft:attack_damage base set 2.15
+attribute @p minecraft:attack_knockback base set 0
 
 effect clear @p fire_resistance
 effect give @p jump_boost 2 1 true

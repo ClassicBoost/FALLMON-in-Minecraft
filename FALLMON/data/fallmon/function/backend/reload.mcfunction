@@ -33,6 +33,7 @@ scoreboard players set survivalTime updates 120
 
 scoreboard players add @a radiation 0
 scoreboard players add @a tempRad 0
+scoreboard players add @a thirst 0
 
 # radiation display
 bossbar add 1 "You are perfectly fine!"
