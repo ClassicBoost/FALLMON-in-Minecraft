@@ -1,8 +1,8 @@
 scoreboard players set second updates 20
 
-execute at @e[type=zombie] as @a[distance=..2] run scoreboard players add @p radiation 5
+execute at @e[type=zombie] as @a[distance=..2] run scoreboard players add @p radiation 7
 execute at @e[type=zombie] as @a[distance=..2] run playsound fallmon.radbad neutral @s ~ ~ ~ 1 1 1
-execute at @e[type=husk] as @a[distance=..2] run scoreboard players add @p radiation 10
+execute at @e[type=husk] as @a[distance=..2] run scoreboard players add @p radiation 14
 execute at @e[type=husk] as @a[distance=..2] run playsound fallmon.radbad neutral @s ~ ~ ~ 1 1 1
 
 execute as @a at @s if block ~ ~ ~ water if score survivalistMode updates matches 0 run scoreboard players add @s[scores={type=1..},gamemode=!creative,gamemode=!spectator] radiation 1

@@ -28,4 +28,5 @@ effect give @a[scores={hp=..3}] mining_fatigue 1 1 true
 execute as @a at @s if block ~ ~ ~ water run effect give @s[scores={type=1,hp=5..}] wither 2 0 true
 
 execute if score survivalistMode updates matches 0 as @a at @s run title @s actionbar ["",{"text":"THIRST - ","color":"blue"},{"color":"white","score":{"name":"@s","objective":"thirst"}},{"text":"% // ","color":"white"},{"text":"RAD - ","color":"red"},{"color":"white","score":{"name":"@s","objective":"radiation"}},{"text":"/1000","color":"white"}]
+effect give @a[scores={thirst=..15}] slowness 1 0 true
 effect give @a[scores={thirst=..0}] slowness 1 1 true

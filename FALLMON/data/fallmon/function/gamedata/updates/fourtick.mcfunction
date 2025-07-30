@@ -1,5 +1,3 @@
-scoreboard players set fourtick updates 4
-
 playsound fallmon.rad neutral @a[nbt={Dimension:"minecraft:the_nether"}] ~ ~ ~ 1 1 1
 
 scoreboard players remove @a[nbt={Dimension:"minecraft:overworld"},scores={tempRad=1..}] radiation 1
@@ -16,4 +14,8 @@ execute as @a at @s if block ~ ~ ~ water run scoreboard players add @s[scores={t
 execute as @a at @s if block ~ ~ ~ water run scoreboard players add @s[scores={type=0,thirst=..149}] thirst 1
 execute as @a at @s if block ~ ~ ~ lava run scoreboard players remove @s[scores={type=0..,thirst=21..}] thirst 1
 
+attribute @r[scores={radiation=600..}] minecraft:max_health modifier add 600 -4 add_value
+attribute @r[scores={radiation=..599}] minecraft:max_health modifier remove 600
+
 time add 1
+scoreboard players set fourtick updates 4
