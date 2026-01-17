@@ -11,6 +11,9 @@ effect give @a[gamemode=survival,team=] minecraft:resistance 2 127 true
 effect give @a[gamemode=survival,team=] minecraft:weakness 2 127 true
 title @a[gamemode=survival,team=] actionbar {"text": "Choose a Pokemon (/function fallmon:starter)"}
 
+execute as @a run attribute @s minecraft:jump_strength base set 0.42
+execute as @a run attribute @s minecraft:block_break_speed base set 1
+
 # types
 #  | 0 - Water | 1 - None/Pure Normal | 2 - Fire | 3 - Grass | 4 - Eletric | 5 - Flying | 6 - Poison
 scoreboard players set @a[team=] type -1
@@ -45,7 +48,7 @@ execute as @a[team=pikachu] run attribute @s[team=pikachu] minecraft:max_health 
 execute as @a[team=pikachu] run attribute @s[team=pikachu] minecraft:attack_damage base set 2.15
 
 scoreboard players set @a[team=pikachu] type 4
-effect give @a[team=pikachu] minecraft:jump_boost 2 1 true
+execute as @a[team=pikachu] run attribute @s[team=pikachu] minecraft:jump_strength base set 0.6
 
 #psyduck
 execute as @a[team=psyduck] run attribute @s[team=psyduck] minecraft:max_health base set 22
@@ -157,8 +160,8 @@ execute as @a[team=riolu] run attribute @s[team=riolu] minecraft:max_health base
 execute as @a[team=riolu] run attribute @s[team=riolu] minecraft:attack_damage base set 3.5
 execute as @a[team=riolu] run attribute @s[team=riolu] minecraft:attack_knockback base set 0.5
 
-effect give @a[team=riolu] minecraft:jump_boost 2 0 true
-effect give @a[team=riolu] minecraft:haste 2 0 true
+execute as @a[team=riolu] run attribute @s[team=riolu] minecraft:jump_strength base set 0.6
+execute as @a[team=riolu] run attribute @s[team=riolu] minecraft:block_break_speed base set 1.2
 
 scoreboard players set @a[team=riolu] type 1
 
@@ -239,7 +242,7 @@ execute as @a[team=snivy] run attribute @s[team=snivy] minecraft:attack_knockbac
 execute as @a[team=snivy] run attribute @s[team=snivy] minecraft:attack_speed base set 5
 
 scoreboard players set @a[team=snivy] type 3
-effect give @a[team=snivy] minecraft:jump_boost 2 0 true
+execute as @a[team=snivy] run attribute @s[team=snivy] minecraft:jump_strength base set 0.6
 
 # tepig
 execute as @a[team=tepig] run attribute @s[team=tepig] minecraft:movement_speed base set 0.12

@@ -32,6 +32,8 @@ scoreboard objectives add type dummy
 scoreboard objectives add updates dummy "- Debug Info -"
 
 scoreboard objectives add tempRad dummy
+scoreboard objectives add run minecraft.custom:minecraft.sprint_one_cm
+scoreboard objectives add slept minecraft.custom:minecraft.sleep_in_bed
 
 scoreboard players set hpHeal updates 200
 scoreboard players set survivalTime updates 120

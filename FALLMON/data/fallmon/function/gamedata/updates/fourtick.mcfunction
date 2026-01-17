@@ -14,8 +14,13 @@ execute as @a at @s if block ~ ~ ~ water run scoreboard players add @s[scores={t
 execute as @a at @s if block ~ ~ ~ water run scoreboard players add @s[scores={type=0,thirst=..149}] thirst 1
 execute as @a at @s if block ~ ~ ~ lava run scoreboard players remove @s[scores={type=0..,thirst=21..}] thirst 1
 
-attribute @r[scores={radiation=600..}] minecraft:max_health modifier add 600 -4 add_value
-attribute @r[scores={radiation=..599}] minecraft:max_health modifier remove 600
+execute as @a run attribute @s[scores={radiation=600..}] minecraft:max_health modifier add 600 -4 add_value
+execute as @a run attribute @s[scores={radiation=..599}] minecraft:max_health modifier remove 600
+
+execute as @a run attribute @s minecraft:block_interaction_range base set 5
+# Survivalist mode reduces block interaction range to 2, because well, you wouldn't really be able to reach very far normally.
+# Entity range is left unchanged just so the player does not need to get hit to attack.
+execute if score survivalistMode updates matches 1 as @a[gamemode=survival] run attribute @s minecraft:block_interaction_range base set 2
 
 time add 1
 scoreboard players set fourtick updates 4
