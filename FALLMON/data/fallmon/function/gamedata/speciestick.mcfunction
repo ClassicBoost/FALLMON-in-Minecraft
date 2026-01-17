@@ -47,13 +47,6 @@ execute as @a[team=pikachu] run attribute @s[team=pikachu] minecraft:attack_dama
 scoreboard players set @a[team=pikachu] type 4
 effect give @a[team=pikachu] minecraft:jump_boost 2 1 true
 
-#rattata
-execute as @a[team=rattata] run attribute @s[team=rattata] minecraft:movement_speed base set 0.15
-execute as @a[team=rattata] run attribute @s[team=rattata] minecraft:max_health base set 22
-effect give @a[team=rattata] minecraft:jump_boost 2 1 true
-
-scoreboard players set @a[team=rattata] type 1
-
 #psyduck
 execute as @a[team=psyduck] run attribute @s[team=psyduck] minecraft:max_health base set 22
 effect give @a[team=psyduck] minecraft:water_breathing 2 1 true

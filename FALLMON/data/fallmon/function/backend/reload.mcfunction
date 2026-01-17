@@ -1,11 +1,12 @@
-gamerule doDaylightCycle false
-gamerule drowningDamage false
-gamerule fallDamage false
-gamerule waterSourceConversion false
-gamerule commandBlockOutput false
-gamerule mobGriefing false
-gamerule naturalRegeneration false
-gamerule showDeathMessages false
+# why do you even change the gamerules command, this makes things a hundred times more complicated.
+gamerule advance_time false
+gamerule drowning_damage false
+gamerule fall_damage false
+gamerule water_source_conversion false
+gamerule command_block_output false
+gamerule mob_griefing false
+gamerule natural_health_regeneration false
+gamerule show_death_messages false
 
 scoreboard objectives add updates dummy "- DEBUG INFO -"
 
@@ -17,6 +18,10 @@ scoreboard objectives setdisplay below_name hp
 
 scoreboard objectives add lvl level "Survival Level"
 scoreboard objectives setdisplay list radiation
+
+# Unlike "Masochist" and "Isolation" challenge, this is a self-user challenge.
+# Currently, Unchipped mode only hides the current radiation and thirst level from the player. Disabled if the player is in Creative mode.
+scoreboard objectives add unchippedMode dummy
 
 scoreboard objectives add oxygen air
 
@@ -34,6 +39,7 @@ scoreboard players set survivalTime updates 120
 scoreboard players add @a radiation 0
 scoreboard players add @a tempRad 0
 scoreboard players add @a thirst 0
+scoreboard players add @a unchippedMode 0
 
 # radiation display
 bossbar add 1 "You are perfectly fine!"

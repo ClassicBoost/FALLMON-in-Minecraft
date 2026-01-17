@@ -42,4 +42,4 @@ scoreboard players set @a[scores={hp=..0,radiation=999..}] radiation 750
 scoreboard players set @a[scores={radiation=1051..}] radiation 1050
 scoreboard players set @a[scores={radiation=..-1}] radiation 0
 
-execute if score survivalistMode updates matches 0 run function fallmon:gamedata/radiation/radiationdisplay
+function fallmon:gamedata/radiation/radiationdisplay
