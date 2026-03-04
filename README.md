@@ -1,12 +1,13 @@
 A public build of the data pack is not made yet.
 ## Older Versions
+### [1.21.11](https://github.com/ClassicBoost/FALLMON-in-Minecraft/tree/1.21-v2-Main)
 ### [1.20.4](https://github.com/ClassicBoost/FALLMON-in-Minecraft/tree/1.20.4-Legacy)
 ### [1.20.2](https://github.com/ClassicBoost/FALLMON-in-Minecraft/tree/1.20.4-Legacy)
 # FALLMON Data Pack
-![]([https://cdn.discordapp.com/attachments/1175476820322291774/1208616884363075605/title.png?ex=65e3ef30&is=65d17a30&hm=439cb4ae19baa9b592e280d9c38f09ef23a4dcae6c9628fe5c1747430a85a1be&](https://cdn.discordapp.com/attachments/1175476820322291774/1208616884363075605/title.png?ex=65ff9eb0&is=65ed29b0&hm=885f9f6f137b50667cff93c60be0cc9e6a19634f69af20210b2a494ca0b4adde&))<br>
+![]([https://discord.com/channels/917606018018582578/930662315706163241/1173348832608792576](https://discord.com/channels/917606018018582578/930662315706163241/1173348832608792576))<br>
 The data pack to Minecraft. Adds Fallout and Pokemon features.
 
-This datapack is capatible with version 1.21 and later. May not work for older versions.
+This datapack is currently only capatible with version Forge 1.20.1.
 
 **v2 Resource Pack coming soon**
 
