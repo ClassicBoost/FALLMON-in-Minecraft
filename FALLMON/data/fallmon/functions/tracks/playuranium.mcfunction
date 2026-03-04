@@ -1,0 +1,1 @@
+playsound music_disc.blocks record @s ~ ~ ~ 1 1 1

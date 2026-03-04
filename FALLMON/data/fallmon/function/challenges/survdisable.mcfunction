@@ -1,1 +1,0 @@
-scoreboard players set survivalistMode updates 0
