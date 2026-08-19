@@ -1,25 +1,25 @@
 # why do you even change the gamerules command, this makes things a hundred times more complicated.
-gamerule advance_time false
+#gamerule advance_time false
 gamerule drowning_damage false
 gamerule fall_damage false
 gamerule water_source_conversion false
 gamerule command_block_output false
-gamerule mob_griefing false
 gamerule natural_health_regeneration false
-gamerule show_death_messages false
+
+time rate 0.33
 
 scoreboard objectives add updates dummy "- DEBUG INFO -"
 
 scoreboard objectives add radiation dummy "Radiation Level"
 # scoreboard objectives setdisplay list radiation
 
-scoreboard objectives add hp health "Life Energy"
+scoreboard objectives add hp health "Health"
 scoreboard objectives setdisplay below_name hp
 
 scoreboard objectives add lvl level "Survival Level"
-scoreboard objectives setdisplay list radiation
+#scoreboard objectives setdisplay list radiation
 
-# Unlike "Masochist" and "Isolation" challenge, this is a self-user challenge.
+# Unlike "Survivalist" and "Isolation" challenge, this is a self-user challenge.
 # Currently, Unchipped mode only hides the current radiation and thirst level from the player. Disabled if the player is in Creative mode.
 scoreboard objectives add unchippedMode dummy
 
@@ -30,6 +30,8 @@ scoreboard objectives add thirst dummy
 scoreboard objectives add type dummy
 
 scoreboard objectives add updates dummy "- Debug Info -"
+
+scoreboard objectives add armorLevel armor
 
 scoreboard objectives add tempRad dummy
 scoreboard objectives add run minecraft.custom:minecraft.sprint_one_cm
@@ -42,6 +44,7 @@ scoreboard players add @a radiation 0
 scoreboard players add @a tempRad 0
 scoreboard players add @a thirst 0
 scoreboard players add @a unchippedMode 0
+scoreboard players add allowThirst updates 0
 
 # radiation display
 bossbar add 1 "You are perfectly fine!"
@@ -73,3 +76,5 @@ bossbar set 7 name {"text": "You are decaying", "color": "#871517", "bold": true
 bossbar add 8 "creative"
 bossbar set 8 color white
 bossbar set 8 name {"text": "- In Creative Mode, Some functions are disabled -", "color": "#FFFFFF", "bold": true}
+
+#tellraw @a {"text": "FALLMON datapack reloaded..", "color" : "#47FF47", "bold": true, "italic": true}

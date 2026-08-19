@@ -1,4 +1,8 @@
 # add teams
+team add nothing
+team modify nothing seeFriendlyInvisibles false
+team modify nothing friendlyFire true
+
 team add bulbasaur "Bulbasaur"
 team modify bulbasaur color green
 team modify bulbasaur seeFriendlyInvisibles false

@@ -1,0 +1,1 @@
+scoreboard players set allowThirst updates 1

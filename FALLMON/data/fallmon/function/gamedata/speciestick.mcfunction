@@ -22,6 +22,9 @@ effect give @a[scores={type=2}] minecraft:fire_resistance 5 0 true
 effect give @a[scores={type=0}] minecraft:water_breathing 5 0 true
 effect clear @a[scores={type=1}] minecraft:poison
 
+# nothing
+scoreboard players set @a[team=nothing] type 1
+
 # bulbasaur
 execute as @a[team=bulbasaur] run attribute @s[team=bulbasaur] minecraft:movement_speed base set 0.08
 execute as @a[team=bulbasaur] run attribute @s[team=bulbasaur] minecraft:max_health base set 24
@@ -30,21 +33,22 @@ execute as @a[team=bulbasaur] run attribute @s[team=bulbasaur] minecraft:attack_
 scoreboard players set @a[team=bulbasaur] type 3
 
 # charmander
-execute as @a[team=charmander] run attribute @s[team=charmander] minecraft:movement_speed base set 0.12
+execute as @a[team=charmander] run attribute @s[team=charmander] minecraft:movement_speed base set 0.085
 execute as @a[team=charmander] run attribute @s[team=charmander] minecraft:attack_damage base set 2.15
 
 scoreboard players set @a[team=charmander] type 2
 
 # squirtle
-execute as @a[team=squirtle] run attribute @s[team=squirtle] minecraft:armor base set 6
+execute as @a[team=squirtle] run attribute @s[team=squirtle] minecraft:armor base set 10
+execute as @a[team=squirtle] run attribute @s[team=squirtle] minecraft:movement_speed base set 0.07
 execute as @a[team=squirtle] run attribute @s[team=squirtle] minecraft:attack_knockback base set 0.2
 
 scoreboard players set @a[team=squirtle] type 0
 
 # pikachu
-# overrated as fuck man
+# overrated lol
 execute as @a[team=pikachu] run attribute @s[team=pikachu] minecraft:movement_speed base set 0.15
-execute as @a[team=pikachu] run attribute @s[team=pikachu] minecraft:max_health base set 18
+execute as @a[team=pikachu] run attribute @s[team=pikachu] minecraft:max_health base set 16
 execute as @a[team=pikachu] run attribute @s[team=pikachu] minecraft:attack_damage base set 2.15
 
 scoreboard players set @a[team=pikachu] type 4
@@ -52,23 +56,24 @@ execute as @a[team=pikachu] run attribute @s[team=pikachu] minecraft:jump_streng
 
 #psyduck
 execute as @a[team=psyduck] run attribute @s[team=psyduck] minecraft:max_health base set 22
+execute as @a[team=psyduck] run attribute @s[team=psyduck] minecraft:jump_strength base set 0.37
 effect give @a[team=psyduck] minecraft:water_breathing 2 1 true
 
 scoreboard players set @a[team=psyduck] type 0
 
 # cubone
-execute as @a[team=cubone] run attribute @s[team=cubone] minecraft:movement_speed base set 0.12
+execute as @a[team=cubone] run attribute @s[team=cubone] minecraft:movement_speed base set 0.08
 execute as @a[team=cubone] run attribute @s[team=cubone] minecraft:armor base set 4
 execute as @a[team=cubone] run attribute @s[team=cubone] minecraft:attack_knockback base set 0.2
 scoreboard players set @a[team=cubone] type 1
 
 # eevee
-# erm... Eevee doesn't really have any modifiers.
-# YOUR AD HERE FUCKER
+# nothing
 scoreboard players set @a[team=eevee] type 1
 
 # chikorita
 execute as @a[team=chikorita] run attribute @s[team=chikorita] minecraft:movement_speed base set 0.11
+execute as @a[team=chikorita] run attribute @s[team=chikorita] minecraft:max_health base set 18
 execute as @a[team=chikorita] run attribute @s[team=chikorita] minecraft:attack_damage base set 3
 
 scoreboard players set @a[team=chikorita] type 3
@@ -133,20 +138,18 @@ execute as @a[team=turtwig] run attribute @s[team=turtwig] minecraft:attack_dama
 scoreboard players set @a[team=turtwig] type 3
 
 # chimchar
-# naw man, this is just a fucking charmander rip off
+# naw man, this is just a charmander rip off
 execute as @a[team=chimchar] run attribute @s[team=chimchar] minecraft:movement_speed base set 0.09
 execute as @a[team=chimchar] run attribute @s[team=chimchar] minecraft:attack_damage base set 3
 
 scoreboard players set @a[team=chimchar] type 2
 
 # piplup
-# bf as piplup??????????
 execute as @a[team=piplup] run attribute @s[team=piplup] minecraft:attack_damage base set 3
 
 scoreboard players set @a[team=piplup] type 0
 
 # shinx
-# https://pokepasta.fandom.com/wiki/PMD:_Explorers_of_Death
 execute as @a[team=shinx] run attribute @s[team=shinx] minecraft:movement_speed base set 0.11
 execute as @a[team=shinx] run attribute @s[team=shinx] minecraft:armor base set 1
 execute as @a[team=shinx] run attribute @s[team=shinx] minecraft:attack_damage base set 5
@@ -199,13 +202,11 @@ execute as @a[team=teddiursa] run attribute @s[team=teddiursa] minecraft:attack_
 scoreboard players set @a[team=teddiursa] type 1
 
 # buneary
-# bunny sex
 execute as @a[team=buneary] run attribute @s[team=buneary] minecraft:movement_speed base set 0.12
 execute as @a[team=buneary] run attribute @s[team=buneary] minecraft:attack_damage base set 3
 scoreboard players set @a[team=buneary] type 1
 
 # togepi
-# should this even be allowed!?!?!?!
 execute as @a[team=togepi] run attribute @s[team=togepi] minecraft:movement_speed base set 0.13
 execute as @a[team=togepi] run attribute @s[team=togepi] minecraft:armor base set 5
 execute as @a[team=togepi] run attribute @s[team=togepi] minecraft:max_health base set 18
@@ -213,7 +214,7 @@ execute as @a[team=togepi] run attribute @s[team=togepi] minecraft:attack_damage
 scoreboard players set @a[team=togepi] type 1
 
 # mareep
-# the player turns into a sheep
+# the player turns into a sheep in v5000
 execute as @a[team=mareep] run attribute @s[team=mareep] minecraft:max_health base set 22
 execute as @a[team=mareep] run attribute @s[team=mareep] minecraft:attack_damage base set 3
 
