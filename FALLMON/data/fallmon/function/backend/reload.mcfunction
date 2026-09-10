@@ -34,6 +34,12 @@ scoreboard objectives add updates dummy "- Debug Info -"
 scoreboard objectives add armorLevel armor
 
 scoreboard objectives add tempRad dummy
+scoreboard objectives add stamina dummy
+
+scoreboard objectives add jump minecraft.custom:minecraft.jump
+
+scoreboard players set @a stamina 1000
+
 scoreboard objectives add run minecraft.custom:minecraft.sprint_one_cm
 scoreboard objectives add slept minecraft.custom:minecraft.sleep_in_bed
 
@@ -45,12 +51,13 @@ scoreboard players add @a tempRad 0
 scoreboard players add @a thirst 0
 scoreboard players add @a unchippedMode 0
 scoreboard players add allowThirst updates 0
+scoreboard players set #dayLength updates 24000
 
 # radiation display
-bossbar add 1 "You are perfectly fine!"
+bossbar add 1 "DAY - 0"
 bossbar set 1 color white
 
-bossbar add 2 "You are fine"
+bossbar add 2 "STAMINA - ||||||||||"
 bossbar set 2 color white
 
 bossbar add 3 "You are slightly fatigued"

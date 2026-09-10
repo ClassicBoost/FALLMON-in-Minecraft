@@ -1,1 +1,1 @@
-tellraw @s "Not functional yet, use \"/team join\" instead"
+function fallmon:modmenu/main

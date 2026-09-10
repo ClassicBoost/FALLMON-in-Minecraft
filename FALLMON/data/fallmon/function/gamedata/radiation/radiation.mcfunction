@@ -1,5 +1,5 @@
-bossbar set 1 players none
-bossbar set 2 players none
+#bossbar set 1 players none
+#bossbar set 2 players none
 bossbar set 3 players none
 bossbar set 4 players none
 bossbar set 5 players none
@@ -42,4 +42,4 @@ scoreboard players set @a[scores={hp=..0,radiation=999..}] radiation 750
 scoreboard players set @a[scores={radiation=1051..}] radiation 1050
 scoreboard players set @a[scores={radiation=..-1}] radiation 0
 
-function fallmon:gamedata/radiation/radiationdisplay
+#function fallmon:gamedata/radiation/radiationdisplay
